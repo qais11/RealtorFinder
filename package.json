@@ -1,5 +1,5 @@
 {
-  "name": "vue-app",
+  "name": "realtor-finder",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -39,5 +39,17 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qais11/RealtorFinder.git"
+  },
+  "author": "Qays Alghazali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qais11/RealtorFinder/issues"
+  },
+  "homepage": "https://github.com/qais11/RealtorFinder#readme"
 }
