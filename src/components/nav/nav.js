@@ -3,5 +3,10 @@ export default {
     props: {
       msg: String,
       flag: Boolean
+    },
+    methods: {
+      openSideBar() {
+        this.$root.$emit('openSideBar');
+      }
     }
   }
