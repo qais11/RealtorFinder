@@ -37,3 +37,23 @@
      vertical-align: middle;
      font-size: 42px;
   }
+
+  @media screen and (max-width: 812px) {
+    .name {
+        font-size: 12px;
+        font-weight: bolder;
+     }
+
+     .icon {
+        width: 25%;
+     }
+     
+     .search-bar{
+        margin-left: 3px;
+      }
+
+      .search-bar-container {
+        width: 45%;
+       }
+
+  }

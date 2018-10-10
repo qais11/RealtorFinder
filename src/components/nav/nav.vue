@@ -1,7 +1,7 @@
 <template>
 <div class="nav-bar">
     <div class="icon">
-        <p v-on:click="openSideBar" class="name">RealtorFinder</p>
+        <p v-on:click="openSideBar()" class="name">RealtorFinder</p>
     </div>
     <div class="search-bar-container">
         <input placeholder="search state, city, Realtor name .. etc" class="search-bar" type="text">
