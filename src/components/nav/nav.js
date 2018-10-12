@@ -10,8 +10,8 @@ export default {
       KeyValue,
     },
     methods: {
-      openSideBar() {
-        this.$root.$emit('openSideBar');
-      }
+      // openSideBar() {
+      //   this.$root.$emit('openSideBar');
+      // }
     }
   }

@@ -10,7 +10,7 @@
                 value-size="21px" 
                 key-size="21px" 
                 value-color="#35495e"
-                key-color= "#fff"
+                key-color= "#42b883"
                 is-value="true"/>
 
             <key-value key-property="Email"
