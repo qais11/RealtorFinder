@@ -2,6 +2,8 @@
   <div id="app">
     <Nav :flag="true"/>
     <side-bar v-on:openSideBar="openSideBar()"></side-bar>
+    <img src="https://maps.googleapis.com/maps/api/staticmap?center=dallas&zoom=12&size=400x800&key=AIzaSyCDKVMsEI5I6K6V4dJzRWBwk1ZA05CK2TE"/>
+
   </div>
 </template>
 
@@ -24,6 +26,7 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 body {
   margin: 0;
   padding: 0;

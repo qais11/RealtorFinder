@@ -1,3 +1,6 @@
+.key-value-container {
+    padding: 5px;
+}
 .value, .key {
     display: inline;
 }

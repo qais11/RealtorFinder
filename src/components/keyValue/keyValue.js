@@ -6,8 +6,11 @@ export default {
       keySize: String,
       valueSize: String,
       valueColor: String,
-      keyColor: String
+      keyColor: String,
+      isValue: String,
+      keyFont: String,
+      valueFont: String
     },
-    methods: {
-    }
+    methods: {  
+    },
   }
