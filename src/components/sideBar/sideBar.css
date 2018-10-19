@@ -17,6 +17,10 @@
     top: 10px;
 }
 
+.image-container {
+    margin: 10px auto;
+}
+
 .animate {
     -webkit-animation-name: slide; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */

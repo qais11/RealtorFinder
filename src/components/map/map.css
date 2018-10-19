@@ -1,0 +1,25 @@
+#map {
+        height: 100%;
+        text-align: center;
+        width: 100%;
+}
+.map-container { 
+    position: relative;
+}
+
+.crop .icon-container {
+    height: auto;
+    width: 50px;
+    width: 50px;
+}
+
+.crop {
+    left: -30px;
+    bottom: -30px;
+    position: absolute;
+    overflow: hidden;
+    min-width: 50px;
+    max-width: 50px;
+    border-radius: 50% ;
+   }
+   

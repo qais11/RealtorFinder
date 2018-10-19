@@ -8,9 +8,10 @@ export default {
       valueColor: String,
       keyColor: String,
       isValue: String,
+      isPhone: String,
       keyFont: String,
       valueFont: String
     },
     methods: {  
-    },
+    }
   }

@@ -1,6 +1,6 @@
 <template>
-<div class="nav-bar">
-    <div v-on:click="openSideBar()" class="icon">
+<div v-on:click="closeSideBar()" class="nav-bar">
+    <div class="icon">
          <key-value key-property="RealtorFinder"
                    key-size="32px" 
                    key-color= "#42b883"

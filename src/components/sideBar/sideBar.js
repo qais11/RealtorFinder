@@ -25,6 +25,7 @@ export default {
     },
     mounted() {
         this.$root.$on("openSideBar", this.openSideBar);
+        this.$root.$on("closeSideBar", this.closeSideBar);
     }
 
   }
