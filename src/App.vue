@@ -11,13 +11,15 @@ import Nav from './components/nav/nav.vue'
 import SideBar from './components/sideBar/sideBar.vue'
 import Map from './components/map/map.vue'
 
+
+
 export default {
   name: 'app',
   components: {
     Nav,
     SideBar,
     Map
-  }
+  },
 }
 </script>
 

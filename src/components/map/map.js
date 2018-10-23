@@ -1,7 +1,6 @@
 import GmapCustomMarker from 'vue2-gmap-custom-marker';
 import RealtorPhoto from '../photo/photo.vue' 
 
-  
   export default {
     name: 'Map',
     props: {

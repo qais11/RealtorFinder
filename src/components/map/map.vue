@@ -6,7 +6,7 @@
       :zoom="zoom"
       map-type-id="terrain"
       :style="styles"
-      v-on:click="openSideBar()"
+ v-on:click="openSideBar()" 
     >
     <gmap-custom-marker
     :marker="positions[index]"
@@ -23,13 +23,3 @@
 <script src="./map.js"></script>
 <style scoped src="./map.css"></style>
 
-  // <GmapMarker
-  //     :key="index"
-  //     v-for="(m, index) in markers"
-  //     :position="m.position"
-  //     :clickable="true"
-  //     :draggable="false"
-  //     @click="center=m.position"
-  //     v-on:click="openSideBar()"
-  //     :icon="m.icon"
-  //   />
