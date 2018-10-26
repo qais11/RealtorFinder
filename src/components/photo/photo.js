@@ -4,7 +4,8 @@ export default {
       url: String,
       width: String,
       height: String,
-      zIndex: Number
+      zIndex: Number,
+      num: Number
     },
     methods: {
     }

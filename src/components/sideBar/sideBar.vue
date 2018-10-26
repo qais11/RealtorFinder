@@ -4,11 +4,11 @@
             X
         </div>
         <div class="image-container">
-            <realtor-photo height="190px" width="190px" url="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350"/>
+            <realtor-photo height="190px" width="190px" :url="realtor.url"/>
         </div>
         <div class="info-container">
             <key-value key-property="Name"
-                value="Mohammed Kadhim" 
+                :value="realtor.name" 
                 value-size="21px" 
                 key-size="21px" 
                 value-color="#35495e"
@@ -17,7 +17,7 @@
                 />
 
             <key-value key-property="Email"
-                value="mohammed.realtor@gmail.com" 
+                :value="realtor.email" 
                 value-size="21px" 
                 key-size="21px" 
                 value-color="#35495e"
@@ -25,7 +25,7 @@
                 is-value="true"/>
 
             <key-value key-property="Cell"
-                value="346.311.8824" 
+                :value="realtor.cell" 
                 value-size="21px" 
                 key-size="21px" 
                 value-color="#35495e"
@@ -34,7 +34,7 @@
                 is-phone="true"/>
 
             <key-value key-property="Phone"
-                value="214.731.3163" 
+                :value="realtor.phone" 
                 value-size="21px" 
                 key-size="21px" 
                 value-color="#35495e"

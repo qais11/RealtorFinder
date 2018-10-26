@@ -1,5 +1,6 @@
 <template>
     <div class="image-container" :style="{width:width, height: height, zIndex: zIndex, 'background-image': 'url(' + url + ')'}">
+        <p class="number">{{num}}</p>
     </div>
 </template>
 <script src="./photo.js"></script>
