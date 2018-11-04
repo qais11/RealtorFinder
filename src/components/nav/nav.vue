@@ -7,9 +7,6 @@
                    no-value="false"
                    keyFont="'Kaushan Script', cursive"/>
     </div>
-    <div class="search-bar-container">
-        <input placeholder="search state, city, Realtor name .. etc" class="search-bar" type="text">
-    </div>
 </div>
 </template>
 <script src="./nav.js"></script>

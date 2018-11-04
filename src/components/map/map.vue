@@ -17,15 +17,16 @@
     :center="center"
     :key="index" 
     >
-      <realtor-photo height="30px" width="30px" :zIndex="index" :url="realtor.url"/>
+      <realtor-photo height="30px" width="30px" :zIndex="realtor.id" :url="realtor.url"/>
     </gmap-custom-marker>
 
     <gmap-custom-marker
+    @click.native="zoomToState(statesPositions[index])"
     v-else-if="zoomIn < 1"
     v-for="(realtorsNum, index) in statesPositions" 
     :marker="statesPositions[index]"
     :center="center"
-    :key="index" 
+    :key="realtorsNum[index]" 
     >
       <realtor-photo height="30px" width="30px" :num="realtorsNumbers[index]" url="https://www.colorhexa.com/2c3e50.png"/>
     </gmap-custom-marker>

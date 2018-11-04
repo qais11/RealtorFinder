@@ -1,5 +1,5 @@
 export default {
-    realtorsData: [
+    Data: [
         {
           id: 1,
           email: "mohammed.realtor@gmail.com",
@@ -31,7 +31,7 @@ export default {
           phone: "444.555.0000",
           name: "Jasim Aladhami",
           position: {lat: 32.876665, lng:  -96.996989 },
-          url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNjtOB-wzsURIohbvXG-HqubPkDP70oJFkopVLIjprZaz61DjB2w'
+          url:'https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/11/02/10/rexfeatures-5611390g.jpg?w968h681'
         }
       ],
 }
