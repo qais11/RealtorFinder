@@ -8,6 +8,7 @@
     margin-top: 60px;
     box-shadow: -1px 8px 20px 2px rgb(124, 133, 121);
     overflow: scroll;
+    z-index: 9999;
 }
 
 .close-btn {

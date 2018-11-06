@@ -1,5 +1,5 @@
 import GmapCustomMarker from 'vue2-gmap-custom-marker';
-import RealtorPhoto from '../photo/photo.vue' 
+import RealtorPhoto from '../photo/photo.vue'
 import Data from './dm.js'
 
   export default {
@@ -20,23 +20,28 @@ import Data from './dm.js'
         {
           width: '100%',
           height: '800px', 
-          margin: 'auto'
+          margin: 'auto',
         }
       ],
       zoom: 3.4,
       realtors: Data.Data,
-      statesPositions: [
-        {lat: 31.968599, lng:  -99.901810 },
-        {lat: 27.664827, lng:  -81.515755 },
-        {lat: 36.778259, lng:  -119.417931 },
-      ],
+      realtorsNumInStates: Data.statesPositions,
       mapOptions: {
         disableDefaultUI : true,
         gestureHandling: 'greedy',
       },
-      realtorsNumbers: [2,1,1]
     }  
   },
+  beforeMount() {
+    for (var i = 0; i < this.realtors.length ; i++) {
+      for(var j = 0; j < this.realtorsNumInStates.length; j++) {
+        if(this.realtors[i].state === this.realtorsNumInStates[j].name) {
+          this.realtorsNumInStates[j].realtors += 1;
+        }
+      } 
+    }
+  },
+
   mounted () {
     var self = this;
     this.$refs.Rmap.$mapPromise.then((map) => {
@@ -52,9 +57,12 @@ import Data from './dm.js'
       self.$on('stateClicked', function(){
         map.zoom = 5.9;
       });
+      self.$on('resetZoom', function(){
+        map.zoom = 3.4;
+      })
     });
   },
- 
+
    methods: {
     openSideBar(id) {
       this.$root.$emit('openSideBar', id);
@@ -63,5 +71,9 @@ import Data from './dm.js'
       this.$emit('stateClicked');
       this.center =  statePosition;
     },
-  }
+    resetZoom() {
+      this.$emit('resetZoom');
+      this.center = {lat: 32.776665, lng: -96.796989};
+    }
+  },
 }

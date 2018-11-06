@@ -1,5 +1,6 @@
 <template>
   <div id="map">
+    <button v-if="zoomIn > 0" class="reset-btn" v-on:click="resetZoom()">Reset Zoom</button>
     <GmapMap
       ref="Rmap"
       width="100%"
@@ -21,14 +22,14 @@
     </gmap-custom-marker>
 
     <gmap-custom-marker
-    @click.native="zoomToState(statesPositions[index])"
+    @click.native="zoomToState(num.position)" 
     v-else-if="zoomIn < 1"
-    v-for="(realtorsNum, index) in statesPositions" 
-    :marker="statesPositions[index]"
+    v-for="(num, index) in realtorsNumInStates" 
+    :marker="num.position"
     :center="center"
-    :key="realtorsNum[index]" 
+    :key="num[index]" 
     >
-      <realtor-photo height="30px" width="30px" :num="realtorsNumbers[index]" url="https://www.colorhexa.com/2c3e50.png"/>
+      <realtor-photo height="30px" width="30px" :num="num.realtors" url="https://www.colorhexa.com/2c3e50.png"/>
     </gmap-custom-marker>
 
     </GmapMap>
