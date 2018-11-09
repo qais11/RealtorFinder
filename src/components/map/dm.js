@@ -2,7 +2,7 @@ export default {
     Data: [
         {
           id: 1,
-          state: 'dallas',
+          state: 'texas',
           email: "mohammed.realtor@gmail.com",
           cell: "346.311.8824",
           phone: "214.731.3163",
@@ -20,7 +20,7 @@ export default {
           url: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350'
         }, {
           id: 3,
-          state: 'dallas',
+          state: 'texas',
           email: "samaladhami@gmail.com",
           cell: "469.403.7999",
           phone: "444.888.0000",

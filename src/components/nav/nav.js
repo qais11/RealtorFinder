@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       cities: ['texas', 'florida', 'california', 'arkansas', 'chicago', 'arizona'],
-      city: 'Look up a city ',
+      city: 'states',
       listActive: null,
     }
   },
