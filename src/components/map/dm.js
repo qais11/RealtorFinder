@@ -89,7 +89,7 @@ export default {
           }
       ],
     statesPositions: [
-        {name: 'dallas', position: {lat: 31.968599, lng:  -99.901810 }, realtors:0},
+        {name: 'texas', position: {lat: 31.968599, lng:  -99.901810 }, realtors:0},
         {name: 'florida', position: {lat: 27.664827, lng:  -81.515755 }, realtors:0},
         {name: 'california', position: {lat: 36.778259, lng:  -119.417931 }, realtors:0},
         {name: 'arkansas', position: {lat: 34.752088, lng:  -92.494942 }, realtors:0},

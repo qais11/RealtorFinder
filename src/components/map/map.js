@@ -59,6 +59,13 @@ import Data from './dm.js'
       });
       self.$on('resetZoom', function(){
         map.zoom = 3.4;
+      });
+      self.$root.$on('chooseState', function(city){
+        self.realtorsNumInStates.map((el)=>{
+          if(el.name === city) {
+            self.zoomToState(el.position);
+          }
+        })
       })
     });
   },
@@ -74,6 +81,9 @@ import Data from './dm.js'
     resetZoom() {
       this.$emit('resetZoom');
       this.center = {lat: 32.776665, lng: -96.796989};
+    },
+    closeStatesList() {
+      this.$root.$emit('listInActive');
     }
   },
 }

@@ -5,12 +5,32 @@ export default {
   props: {
     msg: String,
   },
+  data() {
+    return {
+      cities: ['texas', 'florida', 'california', 'arkansas', 'chicago', 'arizona'],
+      city: 'Look up a city ',
+      listActive: null,
+    }
+  },
   components: {
-    KeyValue
+    KeyValue,
+  },
+  mounted() {
+    var self = this;
+    this.$root.$on('listInActive', function(){
+      self.listActive = false;
+    });
   },
   methods: {
     closeSideBar() {
       this.$root.$emit("closeSideBar");
+    },
+    openList() {
+      this.listActive = true;
+    },
+    chooseState(state) {
+      this.$root.$emit('chooseState', state);
+      this.listActive = false;
     }
   }
 };

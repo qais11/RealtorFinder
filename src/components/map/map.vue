@@ -9,6 +9,7 @@
       map-type-id="terrain"
       :style="styles"
       :options="mapOptions"
+      @click.native="closeStatesList()"
     >
     <gmap-custom-marker
     v-if="zoomIn === 1"
