@@ -19,7 +19,7 @@
     :center="center"
     :key="index" 
     >
-      <realtor-photo height="30px" width="30px" :zIndex="realtor.id" :url="realtor.url"/>
+        <realtor-photo height="30px" width="30px" :zIndex="realtor.id" :url="realtor.url"/>
     </gmap-custom-marker>
 
     <gmap-custom-marker

@@ -5,7 +5,7 @@ export default {
       width: String,
       height: String,
       zIndex: Number,
-      num: Number
+      num: Number,
     },
     methods: {
     }
