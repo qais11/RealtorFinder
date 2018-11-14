@@ -5,10 +5,16 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "server": "vue-cli-service build && node index.js"
   },
   "dependencies": {
     "@typopro/web-titillium": "^3.7.5",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
     "vue": "^2.5.17",
     "vue-class-component": "^6.2.0",
     "vue2-gmap-custom-marker": "^5.3.1",
