@@ -3,6 +3,7 @@
     <Map/>
     <side-bar v-on:openSideBar="openSideBar()"></side-bar>
     <Nav/>
+    <Info/>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Nav from './components/nav/nav.vue'
 import SideBar from './components/sideBar/sideBar.vue'
 import Map from './components/map/map.vue'
+import Info from './components/infoPopUp/info.vue'
 
 
 
@@ -18,7 +20,8 @@ export default {
   components: {
     Nav,
     SideBar,
-    Map
+    Map,
+    Info
   },
 }
 </script>

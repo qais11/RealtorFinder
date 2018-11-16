@@ -49,6 +49,24 @@ export default {
           name: "Qusay Abdulrazzaq",
           position: {lat: 29.760427, lng: -95.369804},
           url: 'http://d.up-00.com/2018/11/154217156435724.jpg'
+        },
+        {
+          id: 6,
+          state: 'texas',
+          email: "qais.gh11@gmail.com",
+          phone: "4694037000",
+          name: "Qays Alghazali",
+          position: {lat: 29.990427, lng: -95.169804},
+          url: 'https://avatars0.githubusercontent.com/u/24416225?s=460&v=4'
+        },
+        {
+          id: 7,
+          state: 'texas',
+          email: "samaladhami@gmail.com",
+          phone: "4694037000",
+          name: "Samer Aladhami",
+          position: {lat: 29.360427, lng: -95.569804},
+          url: 'https://media.licdn.com/dms/image/C4D03AQFJLUSd66ZRuQ/profile-displayphoto-shrink_200_200/0?e=1544659200&v=beta&t=Blj615P3P6xTuh_QA557XfZKeuoKYTm4i6o6NhdSg3o'
         }
           
       ],
