@@ -24,8 +24,8 @@
 
     <gmap-custom-marker
     @click.native="zoomToState(num.position)" 
-    v-else-if="zoomIn < 1"
     v-for="(num, index) in realtorsNumInStates" 
+    v-else-if="zoomIn < 1"
     :marker="num.position"
     :center="center"
     :key="num[index]" 

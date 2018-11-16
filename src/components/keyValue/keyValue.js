@@ -9,6 +9,7 @@ export default {
       keyColor: String,
       isValue: String,
       isPhone: String,
+      isWeb: String,
       keyFont: String,
       valueFont: String
     },

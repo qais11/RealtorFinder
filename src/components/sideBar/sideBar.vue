@@ -24,7 +24,16 @@
                 key-color= "#42b883"
                 is-value="true"/>
 
-            <key-value key-property="Cell"
+            <key-value v-if="realtor.website" key-property="Website"
+                :value="realtor.website" 
+                value-size="21px" 
+                key-size="21px" 
+                value-color="#35495e"
+                key-color= "#42b883"
+                is-web="true"
+                is-value="true"/>
+
+            <key-value v-if="realtor.cell" key-property="Cell"
                 :value="realtor.cell" 
                 value-size="21px" 
                 key-size="21px" 
@@ -33,7 +42,7 @@
                 is-value="true"
                 is-phone="true"/>
 
-            <key-value key-property="Phone"
+            <key-value v-if="realtor.phone" key-property="Phone"
                 :value="realtor.phone" 
                 value-size="21px" 
                 key-size="21px" 
