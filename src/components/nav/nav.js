@@ -7,7 +7,7 @@ export default {
   },
   data() {
     return {
-      cities: ['texas', 'florida', 'california', 'arkansas', 'chicago', 'arizona'],
+      cities: ['texas', 'florida', 'california'],
       city: 'states',
       listActive: null,
     }

@@ -46,9 +46,9 @@ import Data from './dm.js'
     var self = this;
     this.$refs.Rmap.$mapPromise.then((map) => {
       map.mapTypeId = 'terrain';
-      map.setOptions({ minZoom: 3.4, maxZoom: 8 });
+      map.setOptions({ minZoom: 3.4, maxZoom: 9 });
       map.addListener('zoom_changed', function(){
-        if(map.zoom >= 6) {
+      if(map.zoom >= 6) {
           self.zoomIn = 1;
         }else {
           self.zoomIn = 0;
