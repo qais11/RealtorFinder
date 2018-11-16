@@ -36,16 +36,19 @@ h4 {
         padding-top: 11px;
         background: none;
         &::placeholder { 
-            color: #9a9a9a;
+            color: #bbbbbb;
             opacity: 1;
+            font-weight: lighter;
         }
         
         &:-ms-input-placeholder { 
-            color: #9a9a9a;
+            color: #bbbbbb;
+            font-weight: lighter;
         }
         
         &::-ms-input-placeholder { 
-            color: #9a9a9a;
+            color: #bbbbbb;
+            font-weight: lighter;
         }
     }
     input {
