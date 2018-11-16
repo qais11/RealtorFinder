@@ -1,6 +1,7 @@
 
-import RealtorPhoto from '../photo/photo.vue'
-import KeyValue from '../keyValue/keyValue.vue'
+import RealtorPhoto from '../photo/photo.vue';
+import KeyValue from '../keyValue/keyValue.vue';
+import EmailForm from '../EmailForm/EmailForm.vue'
 
 export default {
     name: 'SideBar',
@@ -9,7 +10,8 @@ export default {
     },
     components: {
         RealtorPhoto,
-        KeyValue
+        KeyValue,
+        EmailForm
     },
     data: function(){
         return {

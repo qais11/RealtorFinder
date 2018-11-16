@@ -1,14 +1,16 @@
 .container {
     width: 50%;
     height: 100%;
-    background-color: silver;
+    background-color: #ebebebe3;
     position: fixed;
     top: 0;
     right: -50%;
     margin-top: 60px;
     box-shadow: -1px 8px 20px 2px rgb(124, 133, 121);
-    overflow: scroll;
     z-index: 9999;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: calc(100vh - 61px);
 }
 
 .close-btn {
@@ -44,7 +46,7 @@
 
 .info-container {
     width: 100%;
-    padding: 5px;
+    padding: 3px;
     text-align: center;
 }
 
