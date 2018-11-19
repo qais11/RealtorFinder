@@ -10,6 +10,7 @@ export default {
       cities: ['texas', 'florida', 'california'],
       city: 'states',
       listActive: null,
+      continueAsGuest: false
     }
   },
   components: {
@@ -19,6 +20,9 @@ export default {
     var self = this;
     this.$root.$on('listInActive', function(){
       self.listActive = false;
+    });
+    this.$root.$on('continueAsGuest', function(){
+      self.continueAsGuest = true;
     });
   },
   methods: {

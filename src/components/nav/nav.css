@@ -29,6 +29,10 @@
   float: right;
 }
 
+.dropdown-container > button {
+  width: 100%;
+}
+
 .dropdown {
   width: 100%;
   border-radius: 30px;

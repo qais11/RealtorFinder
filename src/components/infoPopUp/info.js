@@ -4,8 +4,8 @@ export default {
       
     },
     methods: {
-        close() {
-            this.$el.classList.add('close');
+        continueAsGuest() {
+            this.$root.$emit('continueAsGuest');
         }
     }
   }

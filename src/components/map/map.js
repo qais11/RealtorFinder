@@ -26,6 +26,7 @@ import Data from './dm.js'
       zoom: 3.4,
       realtors: Data.Data,
       realtorsNumInStates: Data.statesPositions,
+      realtorsNumInCities: Data.citiesPositions,
       mapOptions: {
         disableDefaultUI : true,
         gestureHandling: 'greedy',
@@ -38,9 +39,16 @@ import Data from './dm.js'
         if(this.realtors[i].state === this.realtorsNumInStates[j].name) {
           this.realtorsNumInStates[j].realtors += 1;
         }
+      }
+      for (var n = 0; n < this.realtorsNumInCities.length; n++) {
+        if(this.realtors[i].city === this.realtorsNumInCities[n].name) {
+          this.realtorsNumInCities[n].realtors += 1;
+          this.realtorsNumInCities[n].position.lat = this.realtors[i].position.lat;
+          this.realtorsNumInCities[n].position.lng = this.realtors[i].position.lng;
+        }
       } 
     }
-  },
+},
 
   mounted () {
     var self = this;
@@ -48,11 +56,16 @@ import Data from './dm.js'
       map.mapTypeId = 'terrain';
       map.setOptions({ minZoom: 3.4, maxZoom: 9 });
       map.addListener('zoom_changed', function(){
-      if(map.zoom >= 6) {
+      if(map.zoom >= 8) {
+          self.zoomIn = 2;
+        }else if (map.zoom >= 6 && map.zoom <= 7){
           self.zoomIn = 1;
-        }else {
+        } else {
           self.zoomIn = 0;
         }
+      });
+      self.$on('cityClicked', function(){
+        map.zoom = 8.9;
       });
       self.$on('stateClicked', function(){
         map.zoom = 5.9;
@@ -77,6 +90,10 @@ import Data from './dm.js'
     zoomToState(statePosition) {
       this.$emit('stateClicked');
       this.center =  statePosition;
+    },
+    zoomToCity(cityPosition) {
+      this.$emit('cityClicked');
+      this.center =  cityPosition;
     },
     resetZoom() {
       this.$emit('resetZoom');

@@ -3,7 +3,9 @@
     <Map/>
     <side-bar v-on:openSideBar="openSideBar()"></side-bar>
     <Nav/>
-    <Info/>
+    <div ref="popUp"> 
+      <Info/>
+    </div>
   </div>
 </template>
 
@@ -23,6 +25,16 @@ export default {
     Map,
     Info
   },
+  data() {
+    return {
+    }
+  },
+  created() {
+    var self = this;
+    this.$root.$on('continueAsGuest', function(){
+      self.$refs["popUp"].classList.add('close')
+    });
+  }
 }
 </script>
 
@@ -39,5 +51,9 @@ body {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  position: relative;
+}
+.close {
+  display: none;
 }
 </style>

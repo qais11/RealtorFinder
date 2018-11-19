@@ -3,6 +3,7 @@ export default {
         {
           id: 1,
           state: 'texas',
+          city: 'dallas',
           email: "mohammed.realtor@gmail.com",
           cell: "346.311.8824",
           phone: "214.731.3163",
@@ -13,6 +14,7 @@ export default {
         {
           id: 2,
           state: 'texas',
+          city: 'san antonio',
           email: "sbaraz.realty@gmail.com",
           website: "http://www.sambaraz.kw.com",
           phone: "2108999186",
@@ -23,6 +25,7 @@ export default {
         {
           id: 3,
           state: 'florida',
+          city: 'orlando',
           email: "realtoralis@gmail.com",
           phone: "4436913528",
           name: "Ali Alrammahy",
@@ -33,6 +36,7 @@ export default {
         {
           id: 4,
           state: 'california',
+          city: 'san diego',
           email: "wmohsin@century21award.com",
           phone: "6194389291",
           website: 'http://www.wisammohsin.com',
@@ -43,6 +47,7 @@ export default {
         {
           id: 5,
           state: 'texas',
+          city: 'houston',
           email: "qussay.abdulrazzaq@kw.com",
           phone: "7133917063",
           website: 'http://www.QussayAbdulrazzaq.com',
@@ -53,19 +58,21 @@ export default {
         {
           id: 6,
           state: 'texas',
+          city: 'dallas',
           email: "qais.gh11@gmail.com",
           phone: "4694037000",
           name: "Qays Alghazali",
-          position: {lat: 29.990427, lng: -95.169804},
+          position: {lat: 32.672110, lng:  -97.020782},
           url: 'https://avatars0.githubusercontent.com/u/24416225?s=460&v=4'
         },
         {
           id: 7,
           state: 'texas',
+          city: 'dallas',
           email: "samaladhami@gmail.com",
           phone: "4694037000",
           name: "Samer Aladhami",
-          position: {lat: 29.360427, lng: -95.569804},
+          position: {lat: 32.864323, lng:  -96.608130 },
           url: 'https://media.licdn.com/dms/image/C4D03AQFJLUSd66ZRuQ/profile-displayphoto-shrink_200_200/0?e=1544659200&v=beta&t=Blj615P3P6xTuh_QA557XfZKeuoKYTm4i6o6NhdSg3o'
         }
           
@@ -77,5 +84,12 @@ export default {
         // {name: 'arkansas', position: {lat: 34.752088, lng:  -92.494942 }, realtors:0},
         // {name: 'chicago', position: {lat: 40.499703, lng:  -89.047470 }, realtors:0},
         // {name: 'arizona', position: {lat: 34.048927, lng: -111.093735 }, realtors:0},
+    ],
+    citiesPositions: [
+      {name: 'dallas', position: {lat:'', lng:''}, realtors:0},
+      {name: 'orlando', position: {lat:'', lng:''}, realtors:0},
+      {name: 'san antonio', position: {lat:'', lng:''}, realtors:0},
+      {name: 'houston', position: {lat:'', lng:''}, realtors:0},
+      {name: 'san diego', position: {lat:'', lng:''}, realtors:0},
     ]
 }

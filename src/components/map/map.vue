@@ -11,8 +11,20 @@
       :options="mapOptions"
       @click.native="closeStatesList()"
     >
+
     <gmap-custom-marker
-    v-if="zoomIn === 1"
+    @click.native="zoomToState(num.position)" 
+    v-for="(num, index) in realtorsNumInStates" 
+    v-if="zoomIn < 1"
+    :marker="num.position"
+    :center="center"
+    :key="num[index]" 
+    >
+      <realtor-photo height="30px" width="30px" :num="num.realtors" url="https://www.colorhexa.com/2c3e50.png"/>
+    </gmap-custom-marker>
+
+    <gmap-custom-marker
+    v-else-if="zoomIn === 2"
     v-for="(realtor, index) in realtors" 
     @click.native="openSideBar(realtor)"
     :marker="realtor.position"
@@ -23,14 +35,14 @@
     </gmap-custom-marker>
 
     <gmap-custom-marker
-    @click.native="zoomToState(num.position)" 
-    v-for="(num, index) in realtorsNumInStates" 
-    v-else-if="zoomIn < 1"
+    @click.native="zoomToCity(num.position)" 
+    v-for="(num, index) in realtorsNumInCities" 
+    v-else-if="zoomIn === 1"
     :marker="num.position"
     :center="center"
     :key="num[index]" 
     >
-      <realtor-photo height="30px" width="30px" :num="num.realtors" url="https://www.colorhexa.com/2c3e50.png"/>
+      <realtor-photo height="30px" width="30px" :num="num.realtors" url="http://www.safascorp.com/images/cc/bc/11.jpg"/>
     </gmap-custom-marker>
 
     </GmapMap>

@@ -8,9 +8,9 @@
                     keyFont="'Kaushan Script', cursive"/>
         </div>
         <div class="dropdown-container">
-            <p v-on:click="openList" class="dropdown">
+            <button :disabled="!continueAsGuest" v-on:click="openList" class="dropdown">
                 {{city}}
-            </p>
+            </button>
         </div>
         <div v-show="listActive" class="dropdown-content">
             <button v-on:click="chooseState(city)" class="city" v-for="(city, index) in cities" :key="index"> 
