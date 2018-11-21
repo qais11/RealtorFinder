@@ -52,8 +52,11 @@
                 is-phone="true"/>
                  <!-- #ff6403 -->
         </div>
-        <section class="side-bar__email-form">
-            <email-form :send-to="realtor.email" />
+        <section v-show="showEmailForm" class="side-bar__email-form">
+            <email-form :realtor-name="realtor.name" :send-to="realtor.email" />
+        </section>
+        <section v-show="!showEmailForm">
+            <email-has-been-sent :realtor-name="realtor.name"></email-has-been-sent>
         </section>
     </div>
 </template>

@@ -3,6 +3,13 @@ head
 body
   div
    p
-    b Hi #{user.name}
+    b Hi #{user.name}!
   div
-    p #{user.message}
+    h4(style='margin-bottom: 0;') you got a message from a user using RealtorFinder, please read the message below
+    br
+    p(style='white-space:pre;margin-top: 0;')
+      | User phone number: #{user.phone} 
+      | User email address: #{user.email}
+    div(style='border: 1px solid #e7e7e7;border-left: none;border-right: none;width: 95%;margin: auto;')
+      p(style='padding: 5px;font-size: 16px;') !{user.message.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
+    h4 Thank you - RealtorFinder Team

@@ -56,4 +56,12 @@ body {
 .close {
   display: none;
 }
+a {
+  text-decoration: none;
+  color: #0383d1
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 </style>

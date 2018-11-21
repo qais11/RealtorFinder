@@ -15,11 +15,11 @@ app.use(express.static(path.join(__dirname, '/dist/')))
 // Use morgan to log request in dev mode
 app.use(morgan('dev'))
 
-app.use(bodyParser.json())
 
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+app.use(bodyParser.json())
 // set the view folder to views
 app.set('views', __dirname + '/views');
 // set the view engine to pug
@@ -42,19 +42,23 @@ mailer.extend(app, {
 
 
   app.post('/sendEmail', function (req, res) {
-    console.log(req.body);
-     
-    // Setup email data.
+
+    //TODO: remove this checkout once the app goes live 
+    // if(req.body.userEmail !== 'qais.gh11@gmail.com' || req.body.userEmail !== 'samaladhami@gmail.com') {
+    //   return;
+    // }
+
     var mailOptions = {
-      to: 'qais.gh11@gmail.com',
-      subject: 'Email RealtorFinder',
+      to: req.body.to,
+      subject: 'Email From RealtorFinder App',
       user: { 
-        name: 'Samer',
-        message: 'Welcome to RealtorFinder, its working!!!!'
+        name: req.body.realtorName || 'there',
+        message: req.body.message,
+        phone: req.body.userPhone || 'Not Provided',
+        email: req.body.userEmail || 'Not Provided'
       }
     }
-   
-    // Send email.
+    // // Send email
     app.mailer.send('email', mailOptions, function (err, message) {
       if (err) {
         console.log(err);
