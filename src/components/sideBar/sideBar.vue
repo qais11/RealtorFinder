@@ -15,7 +15,7 @@
                 key-color= "#42b883"
                 is-value="true"
                 />
-
+            
             <key-value key-property="Email"
                 :value="realtor.email" 
                 value-size="16px" 
@@ -53,7 +53,7 @@
                  <!-- #ff6403 -->
         </div>
         <section class="side-bar__email-form">
-            <email-form />
+            <email-form :send-to="realtor.email" />
         </section>
     </div>
 </template>

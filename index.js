@@ -17,8 +17,9 @@ app.use(morgan('dev'))
 
 app.use(bodyParser.json())
 
-app.use(bodyParser.urlencoded({extended: true}))
-
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 // set the view folder to views
 app.set('views', __dirname + '/views');
 // set the view engine to pug
@@ -41,9 +42,11 @@ mailer.extend(app, {
 
 
   app.post('/sendEmail', function (req, res) {
+    console.log(req.body);
+     
     // Setup email data.
     var mailOptions = {
-      to: 'samaladhami@gmail.com',
+      to: 'qais.gh11@gmail.com',
       subject: 'Email RealtorFinder',
       user: { 
         name: 'Samer',

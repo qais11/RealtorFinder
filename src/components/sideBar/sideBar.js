@@ -6,7 +6,7 @@ import EmailForm from '../EmailForm/EmailForm.vue'
 export default {
     name: 'SideBar',
     props: {
-    msg: String,
+        msg: String,
     },
     components: {
         RealtorPhoto,
@@ -33,7 +33,8 @@ export default {
         openSideBar(realtor) {
             this.open ^= true;
             this.realtor = realtor;
-            
+            this.$root.$emit('ClearForm');
+
         }
     },
     mounted() {

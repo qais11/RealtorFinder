@@ -1,24 +1,23 @@
 <template>
-    <form>
+    <form @submit.prevent="submit">
         <h4>Contact Me</h4>
         <div class="email-form-wrapper">
             <label>
-                From: <input type="text" placeholder="Your email address">
+                From: <input v-model="email" type="email" placeholder="Your email address">
             </label>
             <label>
-                Phone #: <input type="text" placeholder="Your phone number">
+                Phone #: <input v-model="phone" type="number" placeholder="Your phone number">
             </label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message here ..."></textarea>
+            <textarea v-model="message" cols="30" rows="10" placeholder="Your message here ..." required></textarea>
+             <div v-if="error">
+                <p class="form-error">{{ error }}</p>
+            </div>
         </div>
         <button type="submit">Send Email</button>
     </form>
 </template>
-<script>
-export default {
-    
-}
-</script>
 <style lang="scss" src="./EmailForm.scss" scoped></style>
+<script src="./EmailForm.js"></script>
 
 
 
