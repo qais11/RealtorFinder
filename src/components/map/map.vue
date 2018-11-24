@@ -29,7 +29,7 @@
     @click.native="openSideBar(realtor)"
     :marker="realtor.position"
     :center="center"
-    :key="index" 
+    :key="realtor[index]" 
     >
         <realtor-photo height="30px" width="30px" :zIndex="realtor.id" :url="realtor.url"/>
     </gmap-custom-marker>
