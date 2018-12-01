@@ -4,7 +4,7 @@ export default {
           id: 1,
           state: 'texas',
           city: 'dallas',
-          email: "mohammed.realtor@gmail.com",
+          email: "mkadhim.realtor@gmail.com",
           cell: "346.311.8824",
           phone: "214.731.3163",
           name: "Mohammed Kadhim",
@@ -55,27 +55,6 @@ export default {
           position: {lat: 29.760427, lng: -95.369804},
           url: 'http://d.up-00.com/2018/11/154217156435724.jpg'
         },
-        {
-          id: 6,
-          state: 'texas',
-          city: 'dallas',
-          email: "qais.gh11@gmail.com",
-          phone: "4694037000",
-          name: "Qays Alghazali",
-          position: {lat: 32.672110, lng:  -97.020782},
-          url: 'https://avatars0.githubusercontent.com/u/24416225?s=460&v=4'
-        },
-        {
-          id: 7,
-          state: 'texas',
-          city: 'dallas',
-          email: "samaladhami@gmail.com",
-          phone: "4694037000",
-          name: "Samer Aladhami",
-          position: {lat: 32.864323, lng:  -96.608130 },
-          url: 'https://media.licdn.com/dms/image/C4D03AQFJLUSd66ZRuQ/profile-displayphoto-shrink_200_200/0?e=1544659200&v=beta&t=Blj615P3P6xTuh_QA557XfZKeuoKYTm4i6o6NhdSg3o'
-        }
-          
       ],
     statesPositions: [
         {name: 'texas', position: {lat: 31.968599, lng:  -99.901810 }, realtors:0},
