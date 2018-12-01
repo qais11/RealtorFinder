@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       cities: ['texas', 'florida', 'california'],
-      city: 'states',
+      city: 'States',
       listActive: null,
       continueAsGuest: false
     }

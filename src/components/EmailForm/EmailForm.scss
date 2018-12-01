@@ -23,7 +23,7 @@ h4 {
         display: flex;
         align-items: baseline;
         font-size: 13px;
-        color: #9a9a9a;
+        color: #727272;
         padding: 8px 0px 8px 12px;
         border-bottom: 1px solid #dedede;
     }
@@ -35,21 +35,6 @@ h4 {
         font-size: 14px;
         padding-top: 11px;
         background: none;
-        &::placeholder { 
-            color: #bbbbbb;
-            opacity: 1;
-            font-weight: lighter;
-        }
-        
-        &:-ms-input-placeholder { 
-            color: #bbbbbb;
-            font-weight: lighter;
-        }
-        
-        &::-ms-input-placeholder { 
-            color: #bbbbbb;
-            font-weight: lighter;
-        }
     }
     input {
         width: calc(100% - 71px);

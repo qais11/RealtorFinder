@@ -31,8 +31,15 @@ export default {
   },
   created() {
     var self = this;
-    this.$root.$on('continueAsGuest', function(){
-      self.$refs["popUp"].classList.add('close')
+    this.$root.$on('continueAsGuest', function(canceled){
+      if(canceled) {
+        self.$refs["popUp"].classList.add('close')
+      } else {
+        self.$refs["popUp"].classList.add('fadeout')
+        setTimeout(() => {
+          self.$refs["popUp"].classList.add('close')
+        }, 2000);
+      }
     });
   }
 }
@@ -53,6 +60,11 @@ body {
   margin-top: 60px;
   position: relative;
 }
+
+.fadeout {
+  transition: 2s;
+  opacity: 0;
+}
 .close {
   display: none;
 }
@@ -63,5 +75,21 @@ a {
 a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+*::placeholder { 
+    opacity: 1;
+    color: #c5c4c4;
+    font-weight: 100
+}
+
+*:-ms-input-placeholder { 
+    color: #c5c4c4;
+    font-weight: 100
+}
+
+*::-ms-input-placeholder { 
+    color: #c5c4c4;
+    font-weight: 100
 }
 </style>

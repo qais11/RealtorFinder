@@ -1,12 +1,18 @@
-form {
-    margin-bottom: 23px;
-    position: absolute;
+.info-popup__wrapper {
+    background-color: rgba(0, 0, 0, 0.815);
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0px;
-    left: 0px;
-    background-color: rgba(0, 0, 0, 0.815);
+    left: 0px
+
 }
+
+form {
+    margin: 114px auto;
+    max-width: 893px;
+}
+
 h3 {
     color: #42b883;
     margin: 25px 0 0 0;
@@ -15,7 +21,7 @@ h3 {
     font-weight: 2;
 }
 h4 {
-    color: #d3354a;
+    color: #d7d8d9;
     margin: 0 5px;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     font-size: 13px;
@@ -24,7 +30,7 @@ h4 {
 .email-form-wrapper {
     width: 86%;
     margin: 4px auto 13px;
-    background: #ffffffd1;
+    background: #fffffff7;
     border-radius: 4px;
     padding: 1px 0;
     box-shadow: -1px 1px 4px #29292975;
@@ -36,7 +42,7 @@ h4 {
         display: flex;
         align-items: baseline;
         font-size: 13px;
-        color: #9a9a9a;
+        color: #727272;
         padding: 8px 0px 8px 12px;
         border-bottom: 1px solid #dedede;
     }
@@ -48,21 +54,6 @@ h4 {
         font-size: 14px;
         padding-top: 11px;
         background: none;
-        &::placeholder { 
-            color: #bbbbbb;
-            opacity: 1;
-            font-weight: lighter;
-        }
-        
-        &:-ms-input-placeholder { 
-            color: #bbbbbb;
-            font-weight: lighter;
-        }
-        
-        &::-ms-input-placeholder { 
-            color: #bbbbbb;
-            font-weight: lighter;
-        }
     }
     input {
         width: calc(100% - 71px);
@@ -72,6 +63,7 @@ h4 {
         font-size: 15px;
         background: none;
     }
+
 } 
 button {
     background-color: #42b883;
@@ -84,10 +76,20 @@ button {
     font-size: 15px;
     -webkit-box-shadow: -1px 2px 3px #686868ab;
     box-shadow: -1px 2px 3px #686868ab;
-    border: 4px solid #42b883;
+    border: 1px solid #42b883;
 }
 
 .continue-btn {
     background-color: #dedede;
     color: #42b883;
+}
+
+.form-error {
+    color: red;
+    font-size: 13px;
+}
+
+.infoSubmitted {
+    margin-top: 101px;
+    color: #e5e5e5;
 }
