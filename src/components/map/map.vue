@@ -40,7 +40,7 @@
     v-else-if="zoomIn === 1"
     :marker="num.position"
     :center="center"
-    :key="num.id" 
+    :key="num[index]" 
     >
       <realtor-photo height="30px" width="30px" :num="num.realtors" url="http://www.safascorp.com/images/cc/bc/11.jpg"/>
     </gmap-custom-marker>

@@ -157,7 +157,7 @@ export default {
         {
           id: 15,
           state: 'arizona',
-          city: ' tempe',
+          city: 'tempe',
           email: "nadia1978h@gmail.com",
           cell: "480.599.9183",
           phone:'480.777.4500',
@@ -168,13 +168,108 @@ export default {
         {
           id: 16,
           state: 'north carolina',
-          city: ' charlotte',
+          city: 'charlotte',
           email: "layth@laythrealestate.com",
           cell: "704.890.1975",
           name: "Layth Duroobi",
           position: {lat: 35.228067, lng: -80.817549 },
           url: 'https://b.top4top.net/p_1067wh28x1.jpg'
         },
+        {
+          id: 17,
+          state: 'tennessee',
+          city: 'antioch',
+          email: "husseinalnuaimi.nexthome@gmail.com",
+          cell: "615.753.9958",
+          phone:'615.600.5185',
+          name: "Hussein Alnuaimi",
+          position: {lat: 36.050789, lng: -86.646912 },
+          url: 'https://f.top4top.net/p_1068x070p1.jpg'
+        },
+        {
+          id: 18,
+          state: 'colorado',
+          city: 'centennial',
+          email: "jalilireem@gmail.com",
+          cell: "720.447.7377",
+          name: "Reem Jalili",
+          position: {lat: 39.597309, lng: -104.853813 },
+          url: 'https://e.top4top.net/p_10685we491.jpg'
+        },
+        {
+          id: 19,
+          state: 'washington',
+          city: 'seattle',
+          email: "altayyaradnan@gmail.com",
+          cell: "206.765.0987",
+          name: "Adnan Al-Tayyar",
+          position: {lat: 47.606209, lng: -122.332069 },
+          url: 'https://e.top4top.net/p_1068jawhf1.jpg'
+        },
+        {
+          id: 20,
+          state: 'texas',
+          city: 'dallas',
+          email: "al.ibrahim@remax.net",
+          cell: "469.626.2515",
+          phone:'972.208.9200',
+          name: "Al Ibrahim",
+          position: {lat: 32.676883, lng: -96.796620},
+          url: 'https://a.top4top.net/p_1068jsq5m3.jpg'
+        },
+        {
+          id: 21,
+          state: 'texas',
+          city: 'dallas',
+          email: "omar.al@remax.net",
+          cell: "214.859.0335",
+          phone:'972.208.9200',
+          name: "Omar Al-Tememe",
+          position: {lat: 32.770714, lng: -96.907738},
+          url: 'https://f.top4top.net/p_1068z74my2.jpg'
+        },
+        {
+          id: 22,
+          state: 'california',
+          city: 'san diego',
+          email: "shallalrealty@gmail.com",
+          cell: "858.335.5142",
+          name: "Mohammad Shallal",
+          position: {lat: 32.772328, lng: -116.940424},
+          url: 'https://b.top4top.net/p_1068i9iuk4.jpg'
+        },
+        {
+          id: 23,
+          state: 'texas',
+          city: 'austin',
+          email: "reemadam.realtor@gmail.com",
+          cell: "512.537.2201",
+          name: "Reem Adam",
+          position: {lat: 30.272365, lng: -97.638485},
+          url: 'https://d.top4top.net/p_1068lm8tf6.jpg'
+        },
+        {
+          id: 23,
+          state: 'arizona',
+          city: 'tempe',
+          email: "nawalmo19@gmail.com",
+          cell: "602.488.9554",
+          name: "Nawal Mohammed",
+          position: {lat: 33.436957, lng: -112.140608},
+          url: 'https://e.top4top.net/p_10687pud27.jpg'
+        },
+        {
+          id: 24,
+          state: 'virginia',
+          city: 'vienna',
+          email: "yusur1979@gmail.com",
+          cell: "412.880.9738",
+          phone:'703.378.8810',
+          name: "Yusur Almukhtar",
+          position: {lat: 38.903481, lng: -77.262817},
+          url: 'https://c.top4top.net/p_10681dzyw5.jpg'
+        },
+  
       ],
     statesPositions: [
         {name: 'texas', position: {lat: 31.968599, lng:  -99.901810 }, realtors:0},
@@ -183,6 +278,11 @@ export default {
         {name: 'new jersey', position: {lat: 40.058323, lng:  -74.405663 }, realtors:0},
         {name: 'arizona', position: {lat: 34.048927, lng: -111.093735 }, realtors:0},
         {name: 'north carolina', position: {lat: 35.759575, lng: -79.019302 }, realtors:0},
+        {name: 'tennessee', position: {lat: 35.517490, lng: -86.580444 }, realtors:0},
+        {name: 'colorado', position: {lat: 39.550053, lng: -105.782066 }, realtors:0},
+        {name: 'washington', position: {lat: 47.751076, lng: -120.740135 }, realtors:0},
+        {name: 'virginia', position: {lat: 37.431572, lng: -78.656891 }, realtors:0},
+        
     ],
     citiesPositions: [
       {name: 'dallas', position: {lat:'', lng:''}, realtors:0},
@@ -197,5 +297,9 @@ export default {
       {name: 'clifton', position: {lat:'', lng:''}, realtors:0},
       {name: 'tempe', position: {lat:'', lng:''}, realtors:0},
       {name: 'charlotte', position: {lat:'', lng:''}, realtors:0},
+      {name: 'antioch', position: {lat:'', lng:''}, realtors:0},
+      {name: 'centennial', position: {lat:'', lng:''}, realtors:0},
+      {name: 'seattle', position: {lat:'', lng:''}, realtors:0},
+      {name: 'vienna', position: {lat:'', lng:''}, realtors:0},
     ]
 }
