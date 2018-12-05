@@ -53,7 +53,7 @@ import Data from './dm.js'
   mounted () {
     var self = this;
     this.$refs.Rmap.$mapPromise.then((map) => {
-      map.mapTypeId = 'terrain';
+      map.mapTypeId = 'roadmap';
       map.setOptions({ minZoom: 3.4, maxZoom: 9 });
       map.addListener('zoom_changed', function(){
       if(map.zoom >= 8) {
@@ -89,14 +89,17 @@ import Data from './dm.js'
     },
     zoomToState(statePosition) {
       this.$emit('stateClicked');
+      this.zoom = 5.9;
       this.center =  statePosition;
     },
     zoomToCity(cityPosition) {
       this.$emit('cityClicked');
+      this.zoom = 8.9;
       this.center =  cityPosition;
     },
     resetZoom() {
       this.$emit('resetZoom');
+      this.zoom = 3.4;
       this.center = {lat: 32.776665, lng: -96.796989};
     },
     closeStatesList() {
