@@ -13,7 +13,7 @@ import Data from './dm.js'
     },
   data() {
     return {
-      zoom: 0,
+      zoom: 10,
       showInitalMarkers: true,  
       center: {lat: 32.776665, lng: -96.796989},
       styles: [
@@ -51,6 +51,7 @@ import Data from './dm.js'
   
   mounted () {
     
+    
     var self = this;
     this.$refs.Rmap.$mapPromise.then((map) => {
       map.mapTypeId = 'roadmap';
@@ -81,9 +82,11 @@ import Data from './dm.js'
     });
 
     setTimeout(() => {
-      this.zoom = 3;
-      console.log('chabged')
-    }, 5000);
+      this.zoom = 6;
+    }, 900);
+    setTimeout(() => {
+      this.zoom = 3.4;
+    }, 1500);
   },
 
    methods: {

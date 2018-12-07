@@ -5,7 +5,7 @@
       ref="Rmap"
       width="100%"
       :center="center"
-      :zoom="3.4"
+      :zoom="zoom"
       map-type-id="terrain"
       :style="styles"
       :options="mapOptions"
