@@ -7,7 +7,7 @@ export default {
   },
   data() {
     return {
-      cities: ['texas', 'florida', 'california', 'new jersey'],
+      cities: ['texas', 'florida', 'california', 'new jersey', 'arizona', 'north carolina', 'tennessee', 'colorado', 'washington', 'virginia'],
       city: 'States',
       listActive: null,
       continueAsGuest: false
@@ -18,10 +18,10 @@ export default {
   },
   mounted() {
     var self = this;
-    this.$root.$on('listInActive', function(){
+    this.$root.$on('listInActive', function () {
       self.listActive = false;
     });
-    this.$root.$on('continueAsGuest', function(){
+    this.$root.$on('continueAsGuest', function () {
       self.continueAsGuest = true;
     });
   },

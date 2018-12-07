@@ -26,23 +26,41 @@
 }
 
 .animate {
-    -webkit-animation-name: slide; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: slide;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
     animation-name: slide;
     animation-duration: 1s;
     right: 0;
 }
 
 @-webkit-keyframes slide {
-    0%   {right: -50%;}
-    95%  {right: -0.5%;}
-    100% {right: 0;}
+    0% {
+        right: -50%;
+    }
+
+    95% {
+        right: -0.5%;
+    }
+
+    100% {
+        right: 0;
+    }
 }
 
 @keyframes slide {
-    0%   {right: -50%;}
-    95%  {right: -0.5%;}
-    100% {right: 0;}
+    0% {
+        right: -50%;
+    }
+
+    95% {
+        right: -0.5%;
+    }
+
+    100% {
+        right: 0;
+    }
 }
 
 .info-container {
@@ -55,8 +73,9 @@
     .container {
         width: 100%;
         right: -100%;
-      }
-      .animate {
+    }
+
+    .animate {
         right: 0;
     }
-  }
+}

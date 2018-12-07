@@ -307,7 +307,6 @@ export default {
         {name: 'colorado', position: {lat: 39.550053, lng: -105.782066 }, realtors:0},
         {name: 'washington', position: {lat: 47.751076, lng: -120.740135 }, realtors:0},
         {name: 'virginia', position: {lat: 37.431572, lng: -78.656891 }, realtors:0},
-        
     ],
     citiesPositions: [
       {name: 'dallas', position: {lat:'', lng:''}, realtors:0},

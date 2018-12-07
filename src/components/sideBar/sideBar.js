@@ -1,4 +1,3 @@
-
 import RealtorPhoto from '../photo/photo.vue';
 import KeyValue from '../keyValue/keyValue.vue';
 import EmailForm from '../EmailForm/EmailForm.vue'
@@ -15,17 +14,17 @@ export default {
         EmailForm,
         EmailHasBeenSent
     },
-    data: function(){
+    data: function () {
         return {
             showEmailForm: true,
-            open:false,
+            open: false,
             realtor: {
-                url:'',
-                name:'',
-                email:'',
-                cell:'',
-                phone:'',
-                id:''
+                url: '',
+                name: '',
+                email: '',
+                cell: '',
+                phone: '',
+                id: ''
             }
         }
     },
