@@ -34,7 +34,7 @@ export default {
           website: 'http://www.RealtorAlis.com',
           position: {lat: 28.538336, lng:  -81.379234},
           url:'http://d.up-00.com/2018/11/154232975348361.jpg',
-          thumbnail: 'https://b.top4top.net/p_1071o4hse3.jpg'
+          thumbnail: 'https://b.top4top.net/p_1071o8c6y8.jpg'
         },
         {
           id: '3',
@@ -46,7 +46,7 @@ export default {
           name: "Wisam Mohsin",
           position: {lat: 32.715736, lng: -117.161087},
           url: 'http://d.up-00.com/2018/11/154217156367373.jpg',
-          thumbnail: 'https://b.top4top.net/p_1071o8c6y8.jpg'
+          thumbnail: 'https://b.top4top.net/p_1071o4hse3.jpg'
         },
         {
           id: '4',
@@ -58,7 +58,7 @@ export default {
           name: "Qusay Abdulrazzaq",
           position: {lat: 29.760427, lng: -95.369804},
           url: 'http://d.up-00.com/2018/11/154217156435724.jpg',
-          thumbnail: '../../img/thumbnails/5.jpg'
+          thumbnail: 'https://a.top4top.net/p_1071zmkre10.jpg'
         },
         {
           id: '5',
@@ -71,7 +71,7 @@ export default {
           name: "Ahmed (Dave) Abdul Reda",
           position: {lat: 28.367882, lng: -81.371866},
           url: 'https://c.top4top.net/p_1067k76ii1.jpg',
-            thumbnail: '../../img/thumbnails/6.jpg'
+          thumbnail: 'https://f.top4top.net/p_1071ps88j9.jpg'
         },
         {
           id: '6',
@@ -82,8 +82,8 @@ export default {
           website: 'http://www.walzelproperties.com',
           name: "Gada Alzubaidi",
           position: {lat: 29.641999, lng: -95.353285},
-          url: 'https://f.top4top.net/p_10671vlvl1.jpg',
-            thumbnail: '../../img/thumbnails/7.jpg'
+          url: 'https://c.top4top.net/p_1071bq4o31.jpg',
+          thumbnail: 'https://d.top4top.net/p_1071snewn1.jpg'
         },
         {
           id: '7',
@@ -96,7 +96,7 @@ export default {
           name: "Raed Alsabah",
           position: {lat: 32.866152, lng: -96.795432},
           url: 'https://c.top4top.net/p_106752zcb1.jpg',
-            thumbnail: '../../img/thumbnails/8.jpg'
+          thumbnail: 'https://e.top4top.net/p_1071y4u4y2.jpg'
         },
         {
           id: '8',
@@ -108,7 +108,7 @@ export default {
           name: "Maya Ali",
           position: {lat: 29.712749, lng: -95.467202},
           url: 'https://d.top4top.net/p_10679yein1.jpg',
-            thumbnail: '../../img/thumbnails/9.jpg'
+          thumbnail: 'https://e.top4top.net/p_1071gg5nn8.jpg'
         },
         {
           id: '9',
@@ -119,7 +119,7 @@ export default {
           name: "Majid Al Bassam",
           position: {lat: 34.085709, lng: -118.268288},
           url: 'https://f.top4top.net/p_1067snkpm1.jpg',
-            thumbnail: 'https://a.top4top.net/p_1071vqg6g1.jpg'
+          thumbnail: 'https://d.top4top.net/p_1071elnkw7.jpg'
         },
         {
           id: '10',
@@ -130,7 +130,7 @@ export default {
           name: "Wahab Salihi",
           position: {lat: 30.267153, lng: -97.743057},
           url: 'https://c.top4top.net/p_10672jmc41.jpg',
-            thumbnail: '../../img/thumbnails/11.jpg'
+          thumbnail: 'https://a.top4top.net/p_1071p6xz04.jpg'
         },
         {
           id: '11',
@@ -141,7 +141,7 @@ export default {
           name: "Sarmad Jalal",
           position: {lat: 33.717472, lng: -117.831146},
           url: 'https://a.top4top.net/p_10677z1qn1.jpg',
-            thumbnail: '../../img/thumbnails/12.jpg'
+          thumbnail: 'https://c.top4top.net/p_1071f7c0r6.jpg'
         },
         {
           id: '12',
@@ -153,7 +153,7 @@ export default {
           name: "Moustafa Aldouri",
           position: {lat: 39.903860, lng: -75.078360},
           url: 'https://d.top4top.net/p_1067x75j51.jpg',
-            thumbnail: '../../img/thumbnails/13.jpg'
+          thumbnail: 'https://a.top4top.net/p_10711jgui4.jpg'
         },
         {
           id: '13',
@@ -166,7 +166,7 @@ export default {
           website: 'http://www.homesbyhussein.kwrealty.com',
           position: {lat: 40.865421, lng: -74.161003},
           url: 'https://e.top4top.net/p_1067lp48d1.jpg',
-          thumbnail: '../../img/thumbnails/14.jpg'
+          thumbnail: 'https://f.top4top.net/p_1071u6t0v3.jpg'
         },
         {
           id: '14',
@@ -178,7 +178,7 @@ export default {
           name: "Nadia Mohammed",
           position: {lat: 33.425522, lng: -111.941254},
           url: 'https://a.top4top.net/p_10673dhjg1.jpg',
-          thumbnail: '../../img/thumbnails/15.jpg'
+          thumbnail: 'https://f.top4top.net/p_1071xv1xw3.jpg'
         },
         {
           id: '15',
@@ -189,7 +189,7 @@ export default {
           name: "Layth Duroobi",
           position: {lat: 35.228067, lng: -80.817549 },
           url: 'https://b.top4top.net/p_1067wh28x1.jpg',
-          thumbnail: '../../img/thumbnails/16.jpg'
+          thumbnail: 'https://d.top4top.net/p_1071eq08f1.jpg'
         },
         {
           id: '16',
@@ -201,7 +201,7 @@ export default {
           name: "Hussein Alnuaimi",
           position: {lat: 36.050789, lng: -86.646912 },
           url: 'https://f.top4top.net/p_1068x070p1.jpg',
-          thumbnail: '../../img/thumbnails/17.jpg'
+          thumbnail: 'https://f.top4top.net/p_1071qkhx76.jpg'
         },
         {
           id: '17',
@@ -212,7 +212,7 @@ export default {
           name: "Reem Jalili",
           position: {lat: 39.597309, lng: -104.853813 },
           url: 'https://e.top4top.net/p_10685we491.jpg',
-          thumbnail: 'https://f.top4top.net/p_1071qkhx76.jpg'
+          thumbnail: 'https://a.top4top.net/p_10712v3sz7.jpg'
         },
         {
           id: '18',
@@ -223,7 +223,7 @@ export default {
           name: "Adnan Al-Tayyar",
           position: {lat: 47.606209, lng: -122.332069 },
           url: 'https://e.top4top.net/p_1068jawhf1.jpg',
-          thumbnail: 'https://a.top4top.net/p_10712v3sz7.jpg'
+          thumbnail: 'https://b.top4top.net/p_1071mb2cy2.jpg'
         },
         {
           id: '19',
@@ -235,7 +235,7 @@ export default {
           name: "Al Ibrahim",
           position: {lat: 32.676883, lng: -96.796620},
           url: 'https://a.top4top.net/p_1068jsq5m3.jpg',
-          thumbnail: 'https://b.top4top.net/p_1071mb2cy2.jpg'
+          thumbnail: 'https://d.top4top.net/p_1071ovneo7.jpg'
         },
         {
           id: '20',
@@ -247,7 +247,7 @@ export default {
           name: "Omar Al-Tememe",
           position: {lat: 32.770714, lng: -96.907738},
           url: 'https://f.top4top.net/p_1068z74my2.jpg',
-          thumbnail: '../../img/thumbnails/21.jpg'
+          thumbnail: 'https://b.top4top.net/p_1071yh2hs5.jpg'
         },
         {
           id: '21',
@@ -258,7 +258,7 @@ export default {
           name: "Mohammad Shallal",
           position: {lat: 32.772328, lng: -116.940424},
           url: 'https://b.top4top.net/p_1068i9iuk4.jpg',
-          thumbnail: '../../img/thumbnails/22.jpg'
+          thumbnail: 'https://e.top4top.net/p_1071murjj2.jpg'
         },
         {
           id: '22',
@@ -269,7 +269,7 @@ export default {
           name: "Reem Adam",
           position: {lat: 30.272365, lng: -97.638485},
           url: 'https://d.top4top.net/p_1068lm8tf6.jpg',
-          thumbnail: '../../img/thumbnails/23.jpg'
+          thumbnail: 'https://c.top4top.net/p_107112rf16.jpg'
         },
         {
           id: '23',
@@ -280,7 +280,7 @@ export default {
           name: "Nawal Mohammed",
           position: {lat: 33.436957, lng: -112.140608},
           url: 'https://e.top4top.net/p_10687pud27.jpg',
-          thumbnail: '../../img/thumbnails/24.jpg'
+          thumbnail: 'https://e.top4top.net/p_1071ntmxh8.jpg'
         },
         {
           id: '24',
@@ -292,7 +292,7 @@ export default {
           name: "Yusur Almukhtar",
           position: {lat: 38.903481, lng: -77.262817},
           url: 'https://c.top4top.net/p_10681dzyw5.jpg',
-          thumbnail: '../../img/thumbnails/25.jpg'
+          thumbnail: 'https://b.top4top.net/p_10717o0s75.jpg'
         },
   
       ],
