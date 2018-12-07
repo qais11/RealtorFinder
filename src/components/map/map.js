@@ -52,7 +52,6 @@ import Data from './dm.js'
   mounted () {
     
     
-    var self = this;
     this.$refs.Rmap.$mapPromise.then((map) => {
       map.mapTypeId = 'roadmap';
       map.setOptions({ minZoom: 3.4, maxZoom: 9 });

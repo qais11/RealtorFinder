@@ -1,5 +1,6 @@
 <template>
   <div id="map">
+  <img src="'../../img/thumbnails/24.jpg'" alt="">
     <button v-show="zoom > 3" class="reset-btn" v-on:click="resetZoom()">Reset Zoom</button>
     <GmapMap
       ref="Rmap"
@@ -40,6 +41,7 @@
     :marker="realtor.position"
     >
         <realtor-photo height="30px" width="30px" :url="realtor.thumbnail"/>
+        
     </gmap-custom-marker>
 
     </GmapMap>
