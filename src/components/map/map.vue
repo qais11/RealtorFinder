@@ -1,5 +1,6 @@
 <template>
   <div id="map">
+  <img src="'../../img/thumbnails/24.jpg'" alt="">
     <button v-show="zoom > 3" class="reset-btn" v-on:click="resetZoom()">Reset Zoom</button>
     <GmapMap ref="Rmap" width="100%" :center="center" :zoom="zoom" map-type-id="terrain" :style="styles" :options="mapOptions"
       @click.native="closeStatesList()">
