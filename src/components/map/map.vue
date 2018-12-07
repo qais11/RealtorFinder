@@ -1,48 +1,45 @@
 <template>
   <div id="map">
-    <button v-if="zoomIn > 0" class="reset-btn" v-on:click="resetZoom()">Reset Zoom</button>
+    <button v-show="zoom > 3" class="reset-btn" v-on:click="resetZoom()">Reset Zoom</button>
     <GmapMap
       ref="Rmap"
       width="100%"
       :center="center"
-      :zoom="zoom"
+      :zoom="3.4"
       map-type-id="terrain"
       :style="styles"
       :options="mapOptions"
       @click.native="closeStatesList()"
     >
-
+  
     <gmap-custom-marker
-    @click.native="zoomToState(num.position)" 
-    v-for="(num, index) in realtorsNumInStates" 
-    v-if="zoomIn < 1"
-    :marker="num.position"
-    :center="center"
-    :key="num[index]" 
+    @click.native="zoomToState(state.position)" 
+    :key="'b-' + index" 
+    v-for="(state, index) in realtorsNumInStates" 
+    v-show="zoom <= 5"
+    :marker="state.position"
     >
-      <realtor-photo height="30px" width="30px" :num="num.realtors" url="https://www.colorhexa.com/2c3e50.png"/>
-    </gmap-custom-marker>
-
-    <gmap-custom-marker
-    v-else-if="zoomIn === 2"
-    v-for="(realtor, index) in realtors" 
-    @click.native="openSideBar(realtor)"
-    :marker="realtor.position"
-    :center="center"
-    :key="realtor[index]" 
-    >
-        <realtor-photo height="30px" width="30px" :zIndex="realtor.id" :url="realtor.url"/>
+      <realtor-photo height="30px" width="30px" bcolor="#040787" :num="state.realtors" url=""/>
     </gmap-custom-marker>
 
     <gmap-custom-marker
     @click.native="zoomToCity(num.position)" 
-    v-for="(num, index) in realtorsNumInCities" 
-    v-else-if="zoomIn === 1"
+    :key="num[i]" 
+    v-for="(num, i) in realtorsNumInCities" 
+    v-show="zoom >= 6 && zoom <= 7"
     :marker="num.position"
-    :center="center"
-    :key="num[index]" 
     >
-      <realtor-photo height="30px" width="30px" :num="num.realtors" url="http://www.safascorp.com/images/cc/bc/11.jpg"/>
+      <realtor-photo height="30px" width="30px" bcolor="#001800" :num="num.realtors" url=""/>
+    </gmap-custom-marker>
+
+   <gmap-custom-marker
+    @click.native="openSideBar(realtor)"
+    v-show="zoom >= 8"
+    :key='realtor.cell'
+    v-for="realtor in realtors" 
+    :marker="realtor.position"
+    >
+        <realtor-photo height="30px" width="30px" :url="realtor.thumbnail"/>
     </gmap-custom-marker>
 
     </GmapMap>

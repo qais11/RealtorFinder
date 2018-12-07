@@ -13,8 +13,8 @@ import Data from './dm.js'
     },
   data() {
     return {
-      zoomIn: false,
-      zoomOut: true,
+      zoom: 0,
+      showInitalMarkers: true,  
       center: {lat: 32.776665, lng: -96.796989},
       styles: [
         {
@@ -23,7 +23,6 @@ import Data from './dm.js'
           margin: 'auto',
         }
       ],
-      zoom: 3.4,
       realtors: Data.Data,
       realtorsNumInStates: Data.statesPositions,
       realtorsNumInCities: Data.citiesPositions,
@@ -48,39 +47,43 @@ import Data from './dm.js'
         }
       } 
     }
-},
-
+  },
+  
   mounted () {
+    
     var self = this;
     this.$refs.Rmap.$mapPromise.then((map) => {
       map.mapTypeId = 'roadmap';
       map.setOptions({ minZoom: 3.4, maxZoom: 9 });
-      map.addListener('zoom_changed', function(){
-      if(map.zoom >= 8) {
-          self.zoomIn = 2;
-        }else if (map.zoom >= 6 && map.zoom <= 7){
-          self.zoomIn = 1;
-        } else {
-          self.zoomIn = 0;
-        }
+      
+      map.addListener('zoom_changed', () => {
+        this.zoom = map.zoom;       
       });
-      self.$on('cityClicked', function(){
-        map.zoom = 8.9;
-      });
-      self.$on('stateClicked', function(){
-        map.zoom = 5.9;
-      });
-      self.$on('resetZoom', function(){
-        map.zoom = 3.4;
-      });
-      self.$root.$on('chooseState', function(city){
-        self.realtorsNumInStates.map((el)=>{
-          if(el.name === city) {
-            self.zoomToState(el.position);
-          }
-        })
-      })
+      // self.$on('cityClicked', function(){
+      //   map.zoom = 8.9;
+      // });
+      // self.$on('cityClicked', function(){
+      //   map.zoom = 8.9;
+      // });
+      // self.$on('stateClicked', function(){
+      //   map.zoom = 5.9;
+      // });
+      // self.$on('resetZoom', function(){
+      //   map.zoom = 3.4;
+      // });
+      // self.$root.$on('chooseState', function(city){
+      //   self.realtorsNumInStates.map((el)=>{
+      //     if(el.name === city) {
+      //       self.zoomToState(el.position);
+      //     }
+      //   })
+      // })
     });
+
+    setTimeout(() => {
+      this.zoom = 3;
+      console.log('chabged')
+    }, 5000);
   },
 
    methods: {

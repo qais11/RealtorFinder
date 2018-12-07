@@ -1,7 +1,7 @@
 export default {
     Data: [
         {
-          id: 1,
+          id: '0',
           state: 'texas',
           city: 'dallas',
           email: "mkadhim.realtor@gmail.com",
@@ -9,10 +9,11 @@ export default {
           phone: "214.731.3163",
           name: "Mohammed Kadhim",
           position: {lat: 32.776665, lng:  -96.796989 },
-          url:"http://d.up-00.com/2018/11/154217156338422.jpg"
+          url:"http://d.up-00.com/2018/11/154217156338422.jpg",
+          thumbnail: '/Users/qaisgazaly/Desktop/dev/RealtorFinder/vue-app/src/img/thumbnails/1.jpg'
         },
         {
-          id: 2,
+          id: '1',
           state: 'texas',
           city: 'san antonio',
           email: "sbaraz.realty@gmail.com",
@@ -20,10 +21,11 @@ export default {
           phone: "2108999186",
           name: "Sam Baraz",
           position: {lat: 29.424349, lng: -98.292142},
-          url:'http://d.up-00.com/2018/11/154217156296021.jpg'
+          url:'http://d.up-00.com/2018/11/154217156296021.jpg',
+          thumbnail: 'src/img/thumbnails/2.jpg'
         }, 
         {
-          id: 3,
+          id: '2',
           state: 'florida',
           city: 'orlando',
           email: "realtoralis@gmail.com",
@@ -31,10 +33,11 @@ export default {
           name: "Ali Alrammahy",
           website: 'http://www.RealtorAlis.com',
           position: {lat: 28.538336, lng:  -81.379234},
-          url:'http://d.up-00.com/2018/11/154232975348361.jpg'
+          url:'http://d.up-00.com/2018/11/154232975348361.jpg',
+          thumbnail: 'src/img/thumbnails/3.jpg'
         },
         {
-          id: 4,
+          id: '3',
           state: 'california',
           city: 'san diego',
           email: "wmohsin@century21award.com",
@@ -42,10 +45,11 @@ export default {
           website: 'http://www.wisammohsin.com',
           name: "Wisam Mohsin",
           position: {lat: 32.715736, lng: -117.161087},
-          url: 'http://d.up-00.com/2018/11/154217156367373.jpg'
+          url: 'http://d.up-00.com/2018/11/154217156367373.jpg',
+          thumbnail: 'src/img/thumbnails/4.jpg'
         },
         {
-          id: 5,
+          id: '4',
           state: 'texas',
           city: 'houston',
           email: "qussay.abdulrazzaq@kw.com",
@@ -53,10 +57,11 @@ export default {
           website: 'http://www.QussayAbdulrazzaq.com',
           name: "Qusay Abdulrazzaq",
           position: {lat: 29.760427, lng: -95.369804},
-          url: 'http://d.up-00.com/2018/11/154217156435724.jpg'
+          url: 'http://d.up-00.com/2018/11/154217156435724.jpg',
+          thumbnail: 'src/img/thumbnails/5.jpg'
         },
         {
-          id: 6,
+          id: '5',
           state: 'florida',
           city: 'orlando',
           email: "DaveAbed@thekeysrus.com",
@@ -65,10 +70,11 @@ export default {
           website: 'http://www.thekeysrus.com',
           name: "Ahmed (Dave) Abdul Reda",
           position: {lat: 28.367882, lng: -81.371866},
-          url: 'https://c.top4top.net/p_1067k76ii1.jpg'
+          url: 'https://c.top4top.net/p_1067k76ii1.jpg',
+            thumbnail: 'src/img/thumbnails/6.jpg'
         },
         {
-          id: 7,
+          id: '6',
           state: 'texas',
           city: 'houston',
           email: "gadawp@gmail.com",
@@ -76,10 +82,11 @@ export default {
           website: 'http://www.walzelproperties.com',
           name: "Gada Alzubaidi",
           position: {lat: 29.641999, lng: -95.353285},
-          url: 'https://f.top4top.net/p_10671vlvl1.jpg'
+          url: 'https://f.top4top.net/p_10671vlvl1.jpg',
+            thumbnail: 'src/img/thumbnails/7.jpg'
         },
         {
-          id: 8,
+          id: '7',
           state: 'texas',
           city: 'dallas',
           email: "raed@kw.com",
@@ -88,10 +95,11 @@ export default {
           website: 'http://www.raed@kw.com',
           name: "Raed Alsabah",
           position: {lat: 32.866152, lng: -96.795432},
-          url: 'https://c.top4top.net/p_106752zcb1.jpg'
+          url: 'https://c.top4top.net/p_106752zcb1.jpg',
+            thumbnail: 'src/img/thumbnails/8.jpg'
         },
         {
-          id: 9,
+          id: '8',
           state: 'texas',
           city: 'houston',
           email: "maya.realty3@gmail.com",
@@ -99,40 +107,44 @@ export default {
           website: 'http://www.thehorizonteam.com',
           name: "Maya Ali",
           position: {lat: 29.712749, lng: -95.467202},
-          url: 'https://d.top4top.net/p_10679yein1.jpg'
+          url: 'https://d.top4top.net/p_10679yein1.jpg',
+            thumbnail: 'src/img/thumbnails/9.jpg'
         },
         {
-          id: 10,
+          id: '9',
           state: 'california',
           city: 'los angelus',
           email: "malbassam@kw.com",
           cell: "909.203.0406",
           name: "Majid Al Bassam",
           position: {lat: 34.085709, lng: -118.268288},
-          url: 'https://f.top4top.net/p_1067snkpm1.jpg'
+          url: 'https://f.top4top.net/p_1067snkpm1.jpg',
+            thumbnail: 'src/img/thumbnails/10.jpg'
         },
         {
-          id: 11,
+          id: '10',
           state: 'texas',
           city: 'austin',
           email: "wahabsalihi@gmail.com",
           cell: "512.576.8175",
           name: "Wahab Salihi",
           position: {lat: 30.267153, lng: -97.743057},
-          url: 'https://c.top4top.net/p_10672jmc41.jpg'
+          url: 'https://c.top4top.net/p_10672jmc41.jpg',
+            thumbnail: 'src/img/thumbnails/11.jpg'
         },
         {
-          id: 12,
+          id: '11',
           state: 'california',
           city: 'orange county',
           email: "jsarmad@yahoo.com",
           cell: "949.606.5646",
           name: "Sarmad Jalal",
           position: {lat: 33.717472, lng: -117.831146},
-          url: 'https://a.top4top.net/p_10677z1qn1.jpg'
+          url: 'https://a.top4top.net/p_10677z1qn1.jpg',
+            thumbnail: 'src/img/thumbnails/12.jpg'
         },
         {
-          id: 13,
+          id: '12',
           state: 'new jersey',
           city: 'oaklyn',
           email: "maldourirealestate@gmail.com",
@@ -140,10 +152,11 @@ export default {
           phone:'856.858.3200',
           name: "Moustafa Aldouri",
           position: {lat: 39.903860, lng: -75.078360},
-          url: 'https://d.top4top.net/p_1067x75j51.jpg'
+          url: 'https://d.top4top.net/p_1067x75j51.jpg',
+            thumbnail: 'src/img/thumbnails/13.jpg'
         },
         {
-          id: 14,
+          id: '13',
           state: 'new jersey',
           city: 'clifton',
           email: "husseinh2004@gmail.com",
@@ -152,10 +165,11 @@ export default {
           name: "Hussein Al-Bayati",
           website: 'http://www.homesbyhussein.kwrealty.com',
           position: {lat: 40.865421, lng: -74.161003},
-          url: 'https://e.top4top.net/p_1067lp48d1.jpg'
+          url: 'https://e.top4top.net/p_1067lp48d1.jpg',
+            thumbnail: 'src/img/thumbnails/14.jpg'
         },
         {
-          id: 15,
+          id: '14',
           state: 'arizona',
           city: 'tempe',
           email: "nadia1978h@gmail.com",
@@ -163,20 +177,22 @@ export default {
           phone:'480.777.4500',
           name: "Nadia Mohammed",
           position: {lat: 33.425522, lng: -111.941254},
-          url: 'https://a.top4top.net/p_10673dhjg1.jpg'
+          url: 'https://a.top4top.net/p_10673dhjg1.jpg',
+          thumbnail: 'src/img/thumbnails/15.jpg'
         },
         {
-          id: 16,
+          id: '15',
           state: 'north carolina',
           city: 'charlotte',
           email: "layth@laythrealestate.com",
           cell: "704.890.1975",
           name: "Layth Duroobi",
           position: {lat: 35.228067, lng: -80.817549 },
-          url: 'https://b.top4top.net/p_1067wh28x1.jpg'
+          url: 'https://b.top4top.net/p_1067wh28x1.jpg',
+          thumbnail: 'src/img/thumbnails/16.jpg'
         },
         {
-          id: 17,
+          id: '16',
           state: 'tennessee',
           city: 'antioch',
           email: "husseinalnuaimi.nexthome@gmail.com",
@@ -184,30 +200,33 @@ export default {
           phone:'615.600.5185',
           name: "Hussein Alnuaimi",
           position: {lat: 36.050789, lng: -86.646912 },
-          url: 'https://f.top4top.net/p_1068x070p1.jpg'
+          url: 'https://f.top4top.net/p_1068x070p1.jpg',
+          thumbnail: 'src/img/thumbnails/17.jpg'
         },
         {
-          id: 18,
+          id: '17',
           state: 'colorado',
           city: 'centennial',
           email: "jalilireem@gmail.com",
           cell: "720.447.7377",
           name: "Reem Jalili",
           position: {lat: 39.597309, lng: -104.853813 },
-          url: 'https://e.top4top.net/p_10685we491.jpg'
+          url: 'https://e.top4top.net/p_10685we491.jpg',
+          thumbnail: 'src/img/thumbnails/18.jpg'
         },
         {
-          id: 19,
+          id: '18',
           state: 'washington',
           city: 'seattle',
           email: "altayyaradnan@gmail.com",
           cell: "206.765.0987",
           name: "Adnan Al-Tayyar",
           position: {lat: 47.606209, lng: -122.332069 },
-          url: 'https://e.top4top.net/p_1068jawhf1.jpg'
+          url: 'https://e.top4top.net/p_1068jawhf1.jpg',
+          thumbnail: 'src/img/thumbnails/19.jpg'
         },
         {
-          id: 20,
+          id: '19',
           state: 'texas',
           city: 'dallas',
           email: "al.ibrahim@remax.net",
@@ -215,10 +234,11 @@ export default {
           phone:'972.208.9200',
           name: "Al Ibrahim",
           position: {lat: 32.676883, lng: -96.796620},
-          url: 'https://a.top4top.net/p_1068jsq5m3.jpg'
+          url: 'https://a.top4top.net/p_1068jsq5m3.jpg',
+          thumbnail: 'src/img/thumbnails/20.jpg'
         },
         {
-          id: 21,
+          id: '20',
           state: 'texas',
           city: 'dallas',
           email: "omar.al@remax.net",
@@ -226,40 +246,44 @@ export default {
           phone:'972.208.9200',
           name: "Omar Al-Tememe",
           position: {lat: 32.770714, lng: -96.907738},
-          url: 'https://f.top4top.net/p_1068z74my2.jpg'
+          url: 'https://f.top4top.net/p_1068z74my2.jpg',
+          thumbnail: 'src/img/thumbnails/21.jpg'
         },
         {
-          id: 22,
+          id: '21',
           state: 'california',
           city: 'san diego',
           email: "shallalrealty@gmail.com",
           cell: "858.335.5142",
           name: "Mohammad Shallal",
           position: {lat: 32.772328, lng: -116.940424},
-          url: 'https://b.top4top.net/p_1068i9iuk4.jpg'
+          url: 'https://b.top4top.net/p_1068i9iuk4.jpg',
+          thumbnail: 'src/img/thumbnails/22.jpg'
         },
         {
-          id: 23,
+          id: '22',
           state: 'texas',
           city: 'austin',
           email: "reemadam.realtor@gmail.com",
           cell: "512.537.2201",
           name: "Reem Adam",
           position: {lat: 30.272365, lng: -97.638485},
-          url: 'https://d.top4top.net/p_1068lm8tf6.jpg'
+          url: 'https://d.top4top.net/p_1068lm8tf6.jpg',
+          thumbnail: 'src/img/thumbnails/23.jpg'
         },
         {
-          id: 23,
+          id: '23',
           state: 'arizona',
           city: 'tempe',
           email: "nawalmo19@gmail.com",
           cell: "602.488.9554",
           name: "Nawal Mohammed",
           position: {lat: 33.436957, lng: -112.140608},
-          url: 'https://e.top4top.net/p_10687pud27.jpg'
+          url: 'https://e.top4top.net/p_10687pud27.jpg',
+          thumbnail: 'src/img/thumbnails/24.jpg'
         },
         {
-          id: 24,
+          id: '24',
           state: 'virginia',
           city: 'vienna',
           email: "yusur1979@gmail.com",
@@ -267,7 +291,8 @@ export default {
           phone:'703.378.8810',
           name: "Yusur Almukhtar",
           position: {lat: 38.903481, lng: -77.262817},
-          url: 'https://c.top4top.net/p_10681dzyw5.jpg'
+          url: 'https://c.top4top.net/p_10681dzyw5.jpg',
+          thumbnail: 'src/img/thumbnails/25.jpg'
         },
   
       ],

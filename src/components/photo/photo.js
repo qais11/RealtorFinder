@@ -6,6 +6,7 @@ export default {
       height: String,
       zIndex: Number,
       num: Number,
+      bcolor: String
     },
     methods: {
     }
