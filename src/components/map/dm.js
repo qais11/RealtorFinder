@@ -5,7 +5,7 @@ export default {
           state: 'texas',
           city: 'dallas',
           email: "mkadhim.realtor@gmail.com",
-          cell: "346.311.8824",
+          cell: "346.331.8824",
           phone: "214.731.3163",
           name: "Mohammed Kadhim",
           position: {lat: 32.776665, lng:  -96.796989 },
