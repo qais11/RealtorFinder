@@ -1,15 +1,13 @@
 import Vue from 'vue'
 import * as VueGoogleMaps from "vue2-google-maps";
-import App from './App.vue'
-import { googleKey } from '../.VueConfig.js';
- 
+import App from './App.vue'; 
 
 
 Vue.config.productionTip = false
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: googleKey,
+    key: 'AIzaSyCDKVMsEI5I6K6V4dJzRWBwk1ZA05CK2TE',
     // libraries: "places", // This is required if you use the Autocomplete plugin
     // OR: libraries: 'places,drawing'
     libraries: "places,drawing,visualization",

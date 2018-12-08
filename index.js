@@ -34,8 +34,8 @@ mailer.extend(app, {
     port: 465, 
     transportMethod: 'SMTP',
     auth: {
-      user: emailSender.email, 
-      pass: emailSender.pass
+      user: process.env.email || emailSender.email, 
+      pass: process.env.pass || emailSender.pass
     }
   });
 
