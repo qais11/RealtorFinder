@@ -4,7 +4,8 @@ const bodyParser = require('body-parser')
 const path = require('path');
 const morgan = require('morgan');
 
-const emailSender = require('./.config.js');
+// put it back on dev mode
+// const emailSender = require('./.config.js');
 
 
 const app = express();
@@ -34,8 +35,8 @@ mailer.extend(app, {
     port: 465, 
     transportMethod: 'SMTP',
     auth: {
-      user: process.env.email || emailSender.email, 
-      pass: process.env.pass || emailSender.pass
+      user: process.env.email || emailSender && emailSender.email, 
+      pass: process.env.pass || emailSender && emailSender.pass
     }
   });
 
