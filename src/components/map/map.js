@@ -20,7 +20,7 @@ export default {
       },
       styles: [{
         width: '100%',
-        height: '800px',
+        height: 'calc(100vh - 78px)',
         margin: 'auto',
       }],
       realtors: Data.Data,

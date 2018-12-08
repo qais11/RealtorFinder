@@ -57,7 +57,7 @@ export default {
             return {
                 to: 'info.realtor.finder@gmail.com',
                 realtorName: 'RealtorFinder Team',
-                message: `somone has submitted there information in ${this.city}`,
+                message: `somone has submitted thier information in ${this.city}`,
                 userPhone: this.phone,
                 userEmail: this.email,
             }

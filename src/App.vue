@@ -6,6 +6,7 @@
     <div ref="popUp"> 
       <Info/>
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -14,7 +15,7 @@ import Nav from './components/nav/nav.vue'
 import SideBar from './components/sideBar/sideBar.vue'
 import Map from './components/map/map.vue'
 import Info from './components/infoPopUp/info.vue'
-
+import Footer from './components/Footer/Footer.vue'
 
 
 export default {
@@ -23,7 +24,8 @@ export default {
     Nav,
     SideBar,
     Map,
-    Info
+    Info,
+    Footer
   },
   data() {
     return {
