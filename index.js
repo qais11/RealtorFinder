@@ -29,14 +29,14 @@ app.set('view engine', 'pug');
 
 
 mailer.extend(app, {
-    from: emailSender.email,
+    from:  process.env.email || emailSender.email,
     host: 'smtp.gmail.com', 
     secureConnection: true, 
     port: 465, 
     transportMethod: 'SMTP',
     auth: {
-      user: process.env.email || emailSender && emailSender.email, 
-      pass: process.env.pass || emailSender && emailSender.pass
+      user: process.env.email || emailSender.email, 
+      pass: process.env.pass || emailSender.pass
     }
   });
 
