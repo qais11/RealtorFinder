@@ -63,13 +63,16 @@ export default {
         {
           id: '5',
           state: 'florida',
-          city: 'orlando',
+          city: 'boca raton',
           email: "DaveAbed@thekeysrus.com",
           cell: "561.704.4460",
           phone: "561.826.9333",
           website: 'http://www.thekeysrus.com',
           name: "Ahmed (Dave) Abdul Reda",
-          position: {lat: 28.367882, lng: -81.371866},
+          position: {
+            lat: 26.368305,
+            lng: -80.128929
+          },
           url: 'https://c.top4top.net/p_1067k76ii1.jpg',
           thumbnail: 'https://f.top4top.net/p_1071ps88j9.jpg'
         },
@@ -113,11 +116,15 @@ export default {
         {
           id: '9',
           state: 'california',
-          city: 'los angelus',
+          city: 'san dimas',
           email: "malbassam@kw.com",
           cell: "909.203.0406",
           name: "Majid Al Bassam",
-          position: {lat: 34.085709, lng: -118.268288},
+          website: 'http://www.majidalbassam.com',
+          position: {
+            lat: 34.106682,
+            lng: -117.802750
+          },
           url: 'https://f.top4top.net/p_1067snkpm1.jpg',
           thumbnail: 'https://d.top4top.net/p_1071elnkw7.jpg'
         },
@@ -146,25 +153,31 @@ export default {
         {
           id: '12',
           state: 'new jersey',
-          city: 'oaklyn',
+          city: 'new jersey',
           email: "maldourirealestate@gmail.com",
           cell: "856.316.6406",
           phone:'856.858.3200',
           name: "Moustafa Aldouri",
-          position: {lat: 39.903860, lng: -75.078360},
+          position: {
+            lat: 39.598910,
+            lng: -74.673455
+          },
           url: 'https://d.top4top.net/p_1067x75j51.jpg',
           thumbnail: 'https://a.top4top.net/p_10711jgui4.jpg'
         },
         {
           id: '13',
           state: 'new jersey',
-          city: 'clifton',
+          city: 'new jersey',
           email: "husseinh2004@gmail.com",
           cell: "201.962.6295",
           phone:'973.253.2800 x5723',
           name: "Hussein Al-Bayati",
           website: 'http://www.homesbyhussein.kwrealty.com',
-          position: {lat: 40.865421, lng: -74.161003},
+          position: {
+            lat: 39.865051,
+            lng: -74.580112
+          },
           url: 'https://e.top4top.net/p_1067lp48d1.jpg',
           thumbnail: 'https://f.top4top.net/p_1071u6t0v3.jpg'
         },
@@ -316,14 +329,22 @@ export default {
       {name: 'san antonio', position: {lat:'', lng:''}, realtors:0},
       {name: 'houston', position: {lat:'', lng:''}, realtors:0},
       {name: 'san diego', position: {lat:'', lng:''}, realtors:0},
-      {name: 'los angelus', position: {lat:'', lng:''}, realtors:0},
-      {name: 'oaklyn', position: {lat:'', lng:''}, realtors:0},
-      {name: 'clifton', position: {lat:'', lng:''}, realtors:0},
+      {name: 'san dimas', position: {lat:'', lng:''}, realtors:0},
+      {
+        name: 'new jersey',
+        position: {
+          lat: '',
+          lng: ''
+        },
+        realtors: 0
+      },
+      // {name: 'clifton', position: {lat:'', lng:''}, realtors:0},
       {name: 'tempe', position: {lat:'', lng:''}, realtors:0},
       {name: 'charlotte', position: {lat:'', lng:''}, realtors:0},
       {name: 'antioch', position: {lat:'', lng:''}, realtors:0},
       {name: 'centennial', position: {lat:'', lng:''}, realtors:0},
       {name: 'seattle', position: {lat:'', lng:''}, realtors:0},
       {name: 'vienna', position: {lat:'', lng:''}, realtors:0},
+      {name: 'boca raton',position: {lat: '',lng: ''},realtors: 0},
     ]
 }
