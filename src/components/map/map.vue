@@ -11,7 +11,15 @@
 
       <gmap-custom-marker @click.native="zoomToCity(num.position)" :key="num[i]" v-for="(num, i) in realtorsNumInCities"
         v-show="zoom >= 6 && zoom <= 7" :marker="num.position">
-        <realtor-photo height="30px" width="30px" bcolor="#001800" :num="num.realtors" url="" />
+        <!-- here -->
+          <!-- <div class='pin'></div> -->
+          <span class="beacon">
+            <div class="realtors-city-count">{{num.realtors}}</div>
+          </span>
+        <!-- <div class="city-marker"> -->
+
+          <!-- <realtor-photo height="30px" width="30px" bcolor="#001800" :num="num.realtors" url="" /> -->
+        <!-- </div> -->
       </gmap-custom-marker>
 
       <gmap-custom-marker @click.native="openSideBar(realtor)" v-show="zoom >= 8" :key='realtor.cell' v-for="realtor in realtors"
