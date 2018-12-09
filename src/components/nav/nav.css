@@ -8,6 +8,7 @@
   z-index: 99;
   display: flex;
   justify-content: space-around;
+  position: fixed;
 }
 
 .button-container {
@@ -32,7 +33,7 @@
 
 .dropdown-content {
   position: absolute;
-  /* top: 60px; */
+  top: 60px;
   right: inherit;
   background-color: silver;
   width: 20%;
