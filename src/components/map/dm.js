@@ -44,6 +44,7 @@ export default {
           phone: "6194389291",
           website: 'http://www.wisammohsin.com',
           name: "Wisam Mohsin",
+          li:'01979985',
           position: {lat: 32.715736, lng: -117.161087},
           url: 'http://d.up-00.com/2018/11/154217156367373.jpg',
           thumbnail: 'https://b.top4top.net/p_1071o4hse3.jpg'
@@ -258,7 +259,10 @@ export default {
           cell: "214.859.0335",
           phone:'972.208.9200',
           name: "Omar Al-Tememe",
-          position: {lat: 32.770714, lng: -96.907738},
+          position: {
+            lat: 32.765715,
+            lng: -96.684064
+          },
           url: 'https://f.top4top.net/p_1068z74my2.jpg',
           thumbnail: 'https://b.top4top.net/p_1071yh2hs5.jpg'
         },
@@ -307,6 +311,125 @@ export default {
           url: 'https://c.top4top.net/p_10681dzyw5.jpg',
           thumbnail: 'https://b.top4top.net/p_10717o0s75.jpg'
         },
+        {
+          id: '25',
+          state: 'texas',
+          city: 'dallas',
+          email: "ana.re.agent@gmail.com",
+          phone: '214.731.3163',
+          cell: "469.751.7533",
+          name: "Ana Mahdi",
+          position: {
+            lat: 32.770714,
+            lng: -96.907738
+          },
+          url: 'https://f.top4top.net/p_1139xnqvn1.jpg',
+          thumbnail: 'https://f.top4top.net/p_1139xnqvn1.jpg'
+        },
+        {
+          id: '26',
+          state: 'california',
+          city: 'orange county',
+          email: "adam1@kw.com",
+          phone: '714.869.5461',
+          name: "Adam Hammodat",
+          li: '1995901',
+          position: {
+            lat: 33.846046,
+            lng: -117.889886
+          },
+          website: 'http://www.welcomehomeorangecounty.com',
+          url: 'https://a.top4top.net/p_1139ri6k92.jpg',
+          thumbnail: 'https://a.top4top.net/p_1139ri6k92.jpg'
+        },
+        {
+          id: '27',
+          state: 'virginia',
+          city: 'center virginia',
+          email: "aliahmed@weichert.com",
+          phone: '7202.309.4011',
+          name: "Ali Ahmed",
+          position: {
+            lat: 37.431572,
+            lng: -78.656891
+          },
+          url: 'https://b.top4top.net/p_1139y03oo3.jpg',
+          thumbnail: 'https://b.top4top.net/p_1139y03oo3.jpg'
+        },
+          {
+          id: '28',
+          state: 'virginia',
+          city: 'vienna',
+          email: "amaalsami@kw.com",
+          phone: '240.461.1240',
+          name: "Amaal Sami",
+          position: {
+            lat: 38.742637, 
+            lng: -77.070038
+          },
+          url: 'https://c.top4top.net/p_1139mc2714.jpg',
+          thumbnail: 'https://c.top4top.net/p_1139mc2714.jpg'
+        },
+        {
+          id: '29',
+          state: 'texas',
+          city: 'houston',
+          email: "ziad.alkayali@kw.com",
+          phone: '832.661.7270',
+          name: "Ziad Al Kayali",
+          position: {
+            lat: 29.669969,
+            lng: -95.240160
+          },
+          website: 'http://www.ziadalkayali.com',
+          url: 'https://d.top4top.net/p_1139coezx5.jpg',
+          thumbnail: 'https://d.top4top.net/p_1139coezx5.jpg'
+        },
+          {
+          id: '30',
+          state: 'virginia',
+          city: 'vienna',
+          email: "sale@ibteesamhomes.com",
+          phone: '751.225.5652',
+          name: "Ibteesam Al Slimawy",
+          position: {
+            lat: 38.909771,
+            lng: -76.995610
+          },
+          website: 'http://www.ibteesamhomes.com',
+          url: 'https://e.top4top.net/p_11393t1sw6.jpg',
+          thumbnail: 'https://e.top4top.net/p_11393t1sw6.jpg'
+        },
+        {
+          id: '31',
+          state: 'texas',
+          city: 'dallas',
+          email: "Ibrahimatc21@gmail.com",
+          phone: '469.952.8792',
+          name: "Ibrahim Azez",
+          position: {
+            lat: 32.681755,
+            lng: -96.673318
+          },
+          website: 'http://www.century21judgefite.com',
+          url: 'https://c.top4top.net/p_11390z7dp1.jpg',
+          thumbnail: 'https://c.top4top.net/p_11390z7dp1.jpg'
+        },
+        {
+          id: '32',
+          state: 'texas',
+          city: 'houston',
+          email: "saja@westsidehoustonhomes.com",
+          phone: '713.898.3427',
+          name: "Saja Mahdi",
+          position: {
+            lat: 29.770999,
+            lng: -95.239699
+          },
+          website: 'http://www.westsidehoustonhomes.com',
+          url: 'https://a.top4top.net/p_1139htc681.jpg',
+          thumbnail: 'https://a.top4top.net/p_1139htc681.jpg'
+        },
   
       ],
     statesPositions: [
@@ -330,14 +453,7 @@ export default {
       {name: 'houston', position: {lat:'', lng:''}, realtors:0},
       {name: 'san diego', position: {lat:'', lng:''}, realtors:0},
       {name: 'san dimas', position: {lat:'', lng:''}, realtors:0},
-      {
-        name: 'new jersey',
-        position: {
-          lat: '',
-          lng: ''
-        },
-        realtors: 0
-      },
+      {name: 'new jersey',position: {lat: '',lng: ''},realtors: 0},
       // {name: 'clifton', position: {lat:'', lng:''}, realtors:0},
       {name: 'tempe', position: {lat:'', lng:''}, realtors:0},
       {name: 'charlotte', position: {lat:'', lng:''}, realtors:0},
@@ -346,5 +462,13 @@ export default {
       {name: 'seattle', position: {lat:'', lng:''}, realtors:0},
       {name: 'vienna', position: {lat:'', lng:''}, realtors:0},
       {name: 'boca raton',position: {lat: '',lng: ''},realtors: 0},
+      {
+        name: 'center virginia',
+        position: {
+          lat: '',
+          lng: ''
+        },
+        realtors: 0
+      },
     ]
 }

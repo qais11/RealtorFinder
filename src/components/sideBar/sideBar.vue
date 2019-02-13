@@ -21,6 +21,9 @@
 
             <key-value v-if="realtor.phone" key-property="Phone" :value="realtor.phone" value-size="16px" key-size="16px"
                 value-color="#35495e" key-color="#42b883" is-value="true" is-phone="true" />
+            
+            <key-value v-if="realtor.li" key-property="License#" :value="realtor.li" value-size="16px" key-size="16px"
+                value-color="#35495e" key-color="#42b883" is-value="true" />
             <!-- #ff6403 -->
         </div>
         <section v-show="showEmailForm" class="side-bar__email-form">
