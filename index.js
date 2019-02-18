@@ -7,7 +7,6 @@ const morgan = require('morgan');
 // put it back on dev mode
 // const emailSender = require('./.config.js');
 
-
 const app = express();
 const port = process.env.PORT || 3000;
 
