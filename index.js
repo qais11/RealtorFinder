@@ -13,7 +13,7 @@ const port = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, '/dist/')))
 
 // Use morgan to log request in dev mode
-app.use(morgan('dev'))
+app.use(morgan('dev'));
 
 
 app.use(bodyParser.urlencoded({
