@@ -400,23 +400,23 @@ export default {
           url: 'https://e.top4top.net/p_11393t1sw6.jpg',
           thumbnail: 'https://e.top4top.net/p_11393t1sw6.jpg'
         },
+        // {
+        //   id: '31',
+        //   state: 'texas',
+        //   city: 'dallas',
+        //   email: "Ibrahimatc21@gmail.com",
+        //   phone: '469.952.8792',
+        //   name: "Ibrahim Azez",
+        //   position: {
+        //     lat: 32.681755,
+        //     lng: -96.673318
+        //   },
+        //   website: 'http://www.century21judgefite.com',
+        //   url: 'https://c.top4top.net/p_11390z7dp1.jpg',
+        //   thumbnail: 'https://c.top4top.net/p_11390z7dp1.jpg'
+        // },
         {
           id: '31',
-          state: 'texas',
-          city: 'dallas',
-          email: "Ibrahimatc21@gmail.com",
-          phone: '469.952.8792',
-          name: "Ibrahim Azez",
-          position: {
-            lat: 32.681755,
-            lng: -96.673318
-          },
-          website: 'http://www.century21judgefite.com',
-          url: 'https://c.top4top.net/p_11390z7dp1.jpg',
-          thumbnail: 'https://c.top4top.net/p_11390z7dp1.jpg'
-        },
-        {
-          id: '32',
           state: 'texas',
           city: 'houston',
           email: "saja@westsidehoustonhomes.com",
@@ -431,7 +431,7 @@ export default {
           thumbnail: 'https://a.top4top.net/p_1139htc681.jpg'
         },
         {
-          id: '33',
+          id: '32',
           state: 'north carolina',
           city: 'raleigh',
           email: "rod@bestinvestmentrealty.com",
