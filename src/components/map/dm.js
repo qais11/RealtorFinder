@@ -430,7 +430,21 @@ export default {
           url: 'https://a.top4top.net/p_1139htc681.jpg',
           thumbnail: 'https://a.top4top.net/p_1139htc681.jpg'
         },
-  
+        {
+          id: '33',
+          state: 'north carolina',
+          city: 'raleigh',
+          email: "rod@bestinvestmentrealty.com",
+          phone: '919.931.7475',
+          name: "Rod Al Haddad",
+          position: {
+            lat: 35.779591,
+            lng: -78.638176
+          },
+          website: 'http://www.bestinvestmentrealty.com',
+          url: 'https://e.top4top.net/p_1143reggh1.jpg',
+          thumbnail: 'https://e.top4top.net/p_1143reggh1.jpg'
+        },
       ],
     statesPositions: [
         {name: 'texas', position: {lat: 31.968599, lng:  -99.901810 }, realtors:0},
@@ -464,6 +478,14 @@ export default {
       {name: 'boca raton',position: {lat: '',lng: ''},realtors: 0},
       {
         name: 'center virginia',
+        position: {
+          lat: '',
+          lng: ''
+        },
+        realtors: 0
+      },
+      {
+        name: 'raleigh',
         position: {
           lat: '',
           lng: ''
